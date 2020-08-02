@@ -22,4 +22,4 @@ struct Blog: Website {
     var imagePath: Path? { nil }
 }
 
-try Blog().publish(withTheme: .foundation)
+try Blog().publish(withTheme: .spi)
