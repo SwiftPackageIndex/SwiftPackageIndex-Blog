@@ -90,4 +90,14 @@ public extension Node where Context == HTML.BodyContext {
         }
     }
 
+    static func developmentBanner() -> Node<Context> {
+        if Environment.current != .production {
+            return .div(
+                .class("development"),
+                .text("Development")
+            )
+        } else {
+            return .empty
+        }
+    }
 }
