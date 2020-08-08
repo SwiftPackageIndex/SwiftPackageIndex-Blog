@@ -19,11 +19,10 @@ struct SPIHTMLFactory<Site: Website>: HTMLFactory {
                 .analyticsBody(),
                 .developmentBanner(),
                 .header(on: context.site),
-//                .main(on: context.site),
-                .footer(on: context.site),
                 .forEach(context.allItems(sortedBy: \.date, order: .descending)) { item in
                     .post(from:item, on:context.site)
                 },
+                .footer(on: context.site),
                 .developmentBanner()
 
             )
