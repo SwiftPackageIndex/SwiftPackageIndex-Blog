@@ -9,13 +9,6 @@ import Foundation
 import Publish
 import Plot
 
-private enum Env: String {
-    case publishEnv = "PUBLISH_ENV"
-
-    static func variable(_ variable: Env) -> String {
-        variable.rawValue
-    }
-}
 let resourceReloadQueryString = String(Int(Date().timeIntervalSince1970))
 
 public extension Node where Context == HTML.DocumentContext {
@@ -71,33 +64,30 @@ public extension Node where Context == HTML.HeadContext {
     }
 
     static func analyticsHead() -> Node<Context> {
-        guard let environment = ProcessInfo.processInfo.environment[Env.variable(.publishEnv)]
-        else { return .empty }
-
-        if environment != "production" { return .empty }
-
-        return .raw("""
-            <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-P3VPPQR');</script>
-        """)
+        if Environment.current == .production {
+            return .raw("""
+                <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+                })(window,document,'script','dataLayer','GTM-P3VPPQR');</script>
+            """)
+        } else {
+            return .empty
+        }
     }
 }
 
 public extension Node where Context == HTML.BodyContext {
-
     static func analyticsBody() -> Node<Context> {
-        guard let environment = ProcessInfo.processInfo.environment[Env.variable(.publishEnv)]
-        else { return .empty }
-
-        if environment != "production" { return .empty }
-
-        return .raw("""
-            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P3VPPQR"
-            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-        """)
+        if Environment.current == .production {
+            return .raw("""
+                <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P3VPPQR"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+            """)
+        } else {
+            return .empty
+        }
     }
 
 }
