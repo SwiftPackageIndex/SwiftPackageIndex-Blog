@@ -14,7 +14,8 @@ extension Theme {
             htmlFactory: SPIHTMLFactory(),
             resourcePaths: [
                 "Resources/deploy/stylesheets/main.min.css",
-                "Resources/deploy/stylesheets/main.min.css.map"
+                "Resources/deploy/stylesheets/main.min.css.map",
+                "Resources/deploy/images/logo.svg"
             ]
         )
     }

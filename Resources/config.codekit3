@@ -15,6 +15,16 @@
 		"oAP": "/deploy/deploy",
 		"oF": 0
 		},
+	"/images/logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/images/logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/stylesheets/base.scss": {
 		"aP": 0,
 		"bl": 0,
