@@ -19,22 +19,22 @@ public extension Node where Context == HTML.DocumentContext {
         } else {
             title.append("&ndash;" + site.name)
         }
-
+        
         var description = location.description
         if description.isEmpty {
             description = site.description
         }
-
+        
         let stylesheetPaths = [
             Path("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"),
             Path("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"),
             Path("/main.min.css?" + resourceReloadQueryString)
         ]
-
+        
         let javascriptPaths = [
             Path("/main.min.js?" + resourceReloadQueryString)
         ]
-
+        
         return .head(
             .encoding(.utf8),
             .siteName(site.name),
@@ -62,7 +62,7 @@ public extension Node where Context == HTML.HeadContext {
             .src(path.absoluteString)
         )
     }
-
+    
     static func analyticsHead() -> Node<Context> {
         if Environment.current == .production {
             return .raw("""
@@ -89,7 +89,7 @@ public extension Node where Context == HTML.BodyContext {
             return .empty
         }
     }
-
+    
     static func developmentBanner() -> Node<Context> {
         if Environment.current != .production {
             return .div(
@@ -100,7 +100,7 @@ public extension Node where Context == HTML.BodyContext {
             return .empty
         }
     }
-
+    
     static func header<T: Website>(on site: T) -> Node<Context> {
         .header(
             .div(
@@ -125,8 +125,41 @@ public extension Node where Context == HTML.BodyContext {
             )
         )
     }
-
+    
     static func post<T: Website>(from item:Item<T>, on site: T) -> Node<Context> {
         .text(item.title)
+    }
+    
+    static func footer<T: Website>(on site: T) -> Node<Context> {
+        .footer(
+            .div(.class("inner"),
+                 .nav(
+                    .ul(
+                        .li(
+                            .a(
+                                .href("https://swiftpackageindex.com/privacy"),
+                                "Privacy and Cookies"
+                            )
+                        ),
+                        .li(
+                            .a(
+                                .href("https://twitter.com/swiftpackages"),
+                                "Twitter"
+                            )
+                        )
+                    ),
+                    .small(
+                        .a(
+                            .href("https://macstadium.com/"),
+                            "Kindly hosted by MacStadium"
+                        )
+                    )
+                 )
+            )
+        )
+    }
+    
+    static func small(_ nodes: Node<HTML.BodyContext>...) -> Node {
+        .element(named: "small", nodes: nodes)
     }
 }
