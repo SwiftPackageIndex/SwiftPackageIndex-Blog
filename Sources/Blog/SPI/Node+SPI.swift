@@ -48,7 +48,8 @@ public extension Node where Context == HTML.DocumentContext {
             .unwrap(location.imagePath ?? site.imagePath, { path in
                 let url = site.url(for: path)
                 return .socialImageLink(url)
-            })
+            }),
+            .analyticsHead()
         )
     }
 }
@@ -59,4 +60,35 @@ public extension Node where Context == HTML.HeadContext {
             .src(path.absoluteString)
         )
     }
+
+    static func analyticsHead() -> Node<Context> {
+        guard let environment = ProcessInfo.processInfo.environment["PUBLISH_ENV"]
+        else { return .empty }
+
+        if environment != "production" { return .empty }
+
+        return .raw("""
+            <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-P3VPPQR');</script>
+        """)
+    }
+}
+
+public extension Node where Context == HTML.BodyContext {
+
+    static func analyticsBody() -> Node<Context> {
+        guard let environment = ProcessInfo.processInfo.environment["PUBLISH_ENV"]
+        else { return .empty }
+
+        if environment != "production" { return .empty }
+
+        return .raw("""
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P3VPPQR"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        """)
+    }
+
 }

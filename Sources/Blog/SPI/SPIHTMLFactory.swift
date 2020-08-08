@@ -16,6 +16,7 @@ struct SPIHTMLFactory<Site: Website>: HTMLFactory {
             .lang(context.site.language),
             .headSPI(for: index, on: context.site),
             .body(
+                .analyticsBody(),
                 .h1(.text(context.site.name)),
                 .p("Hello World.")
             )
