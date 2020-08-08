@@ -125,6 +125,13 @@ public extension Node where Context == HTML.BodyContext {
             )
         )
     }
+
+    static func main<T:Website>(on site: T, content:(T) -> Node<Context>) -> Node <Context> {
+        .div(
+            .class("inner"),
+            content(site)
+        )
+    }
     
     static func post<T: Website>(from item:Item<T>, on site: T) -> Node<Context> {
         .text(item.title)
