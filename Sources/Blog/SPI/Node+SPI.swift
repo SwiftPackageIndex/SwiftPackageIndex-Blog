@@ -101,7 +101,32 @@ public extension Node where Context == HTML.BodyContext {
         }
     }
 
-    static func post<T: Website>(from item:Item<T>, on site: T) -> Node<HTML.BodyContext> {
+    static func header<T: Website>(on site: T) -> Node<Context> {
+        .header(
+            .div(
+                .class("inner"),
+                .a(
+                    .href("/"),
+                    .h1(
+                        .img(.src("/logo.svg")),
+                        "Swift Package Index"
+                    )
+                ),
+                .nav(
+                    .ul(
+                        .li(
+                            .a(
+                                .href("https://swiftpackageindex.com"),
+                                .text("Home")
+                            )
+                        )
+                    )
+                )
+            )
+        )
+    }
+
+    static func post<T: Website>(from item:Item<T>, on site: T) -> Node<Context> {
         .text(item.title)
     }
 }

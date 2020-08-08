@@ -18,7 +18,7 @@ struct SPIHTMLFactory<Site: Website>: HTMLFactory {
             .body(
                 .analyticsBody(),
                 .developmentBanner(),
-//                .header(),
+                .header(on: context.site),
 //                .main(),
 //                .footer(),
                 .forEach(context.allItems(sortedBy: \.date, order: .descending)) { item in
