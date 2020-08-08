@@ -16,6 +16,7 @@ private enum Env: String {
         variable.rawValue
     }
 }
+let resourceReloadQueryString = String(Int(Date().timeIntervalSince1970))
 
 public extension Node where Context == HTML.DocumentContext {
     static func headSPI<T: Website>(for location: Location, on site: T) -> Node<Context> {
@@ -34,11 +35,11 @@ public extension Node where Context == HTML.DocumentContext {
         let stylesheetPaths = [
             Path("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"),
             Path("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"),
-            Path("/main.min.css")
+            Path("/main.min.css?" + resourceReloadQueryString)
         ]
 
         let javascriptPaths = [
-            Path("/main.min.js")
+            Path("/main.min.js?" + resourceReloadQueryString)
         ]
 
         return .head(
