@@ -100,4 +100,8 @@ public extension Node where Context == HTML.BodyContext {
             return .empty
         }
     }
+
+    static func post<T: Website>(from item:Item<T>, on site: T) -> Node<HTML.BodyContext> {
+        .text(item.title)
+    }
 }

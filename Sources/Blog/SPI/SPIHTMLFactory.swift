@@ -17,8 +17,15 @@ struct SPIHTMLFactory<Site: Website>: HTMLFactory {
             .headSPI(for: index, on: context.site),
             .body(
                 .analyticsBody(),
-                .h1(.text(context.site.name)),
-                .p("Hello World.")
+                .developmentBanner(),
+//                .header(),
+//                .main(),
+//                .footer(),
+                .forEach(context.allItems(sortedBy: \.date, order: .descending)) { item in
+                    .post(from:item, on:context.site)
+                },
+                .developmentBanner()
+
             )
         )
     }
