@@ -9,6 +9,14 @@ import Foundation
 import Publish
 import Plot
 
+private enum Env: String {
+    case publishEnv = "PUBLISH_ENV"
+
+    static func variable(_ variable: Env) -> String {
+        variable.rawValue
+    }
+}
+
 public extension Node where Context == HTML.DocumentContext {
     static func headSPI<T: Website>(for location: Location, on site: T) -> Node<Context> {
         var title = location.title
@@ -62,7 +70,7 @@ public extension Node where Context == HTML.HeadContext {
     }
 
     static func analyticsHead() -> Node<Context> {
-        guard let environment = ProcessInfo.processInfo.environment["PUBLISH_ENV"]
+        guard let environment = ProcessInfo.processInfo.environment[Env.variable(.publishEnv)]
         else { return .empty }
 
         if environment != "production" { return .empty }
@@ -80,7 +88,7 @@ public extension Node where Context == HTML.HeadContext {
 public extension Node where Context == HTML.BodyContext {
 
     static func analyticsBody() -> Node<Context> {
-        guard let environment = ProcessInfo.processInfo.environment["PUBLISH_ENV"]
+        guard let environment = ProcessInfo.processInfo.environment[Env.variable(.publishEnv)]
         else { return .empty }
 
         if environment != "production" { return .empty }
