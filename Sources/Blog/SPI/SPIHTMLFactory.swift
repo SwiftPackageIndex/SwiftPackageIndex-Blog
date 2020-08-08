@@ -14,7 +14,7 @@ struct SPIHTMLFactory<Site: Website>: HTMLFactory {
     func makeIndexHTML(for index: Index, context: PublishingContext<Site>) throws -> HTML {
         HTML(
             .lang(context.site.language),
-            .head(for: index, on: context.site, stylesheetPaths: ["/main.min.css"]),
+            .headSPI(for: index, on: context.site),
             .body(
                 .h1(.text(context.site.name)),
                 .p("Hello World.")
