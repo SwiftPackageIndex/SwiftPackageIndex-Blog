@@ -22,4 +22,9 @@ struct Blog: Website {
     var imagePath: Path? { nil }
 }
 
-try Blog().publish(withTheme: .spi)
+try Blog().publish(
+    withTheme: .spi,
+    additionalSteps: [
+        .deploy(using: .gitHub("SwiftPackageIndex/SwiftPackageIndex-Blog"))
+    ]
+)
