@@ -22,10 +22,10 @@ public extension Node where Context == HTML.DocumentContext {
         if description.isEmpty {
             description = site.description
         }
-        
+
         // The generation date of the site, so the CSS is never out of date.
         let resourceReloadQueryString = String(Int(Date().timeIntervalSince1970))
-        
+
         let stylesheetPaths = [
             Path("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"),
             Path("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"),
@@ -137,8 +137,23 @@ public extension Node where Context == HTML.BodyContext {
     static func post<T: Website>(for location: Location, with item:Item<T>, on site: T) -> Node<Context> {
         .group(
             .h2(
-                .text(item.title)
+                .class("post"),
+                .a(
+                    .href(item.path),
+                    .text(item.title)
+                )
             ),
+            .small(
+                "Posted ",
+                .a(
+                    .href(item.path),
+                    .text(dateFormatter.string(from: item.date))
+                ),
+                "."
+            ),
+            .element(named: "hr", nodes:[
+                .attribute(named: "class", value: "post")
+            ]),
             .contentBody(item.content.body)
         )
     }
@@ -177,3 +192,10 @@ public extension Node where Context == HTML.BodyContext {
         .element(named: "small", nodes: nodes)
     }
 }
+
+let dateFormatter: DateFormatter = {
+    let dateFormatter = DateFormatter()
+    dateFormatter.locale = .current
+    dateFormatter.dateStyle = .full
+    return dateFormatter
+}()

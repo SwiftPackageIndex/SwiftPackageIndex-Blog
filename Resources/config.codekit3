@@ -38,6 +38,19 @@
 		"oS": 0,
 		"sct": 0
 		},
+	"/stylesheets/blog.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/deploy/stylesheets/blog.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
 	"/stylesheets/colors.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -101,7 +114,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "brackets_teal",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 618670012.64473903
+	"lastBuiltDate": 618672959.72960603
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

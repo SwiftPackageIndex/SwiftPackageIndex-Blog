@@ -1,0 +1,15 @@
+h2.post {
+  margin-bottom: 0;
+
+  a {
+    color: var(--page-text);
+
+  }
+}
+
+hr.post {
+  margin: 5px 0 20px 0;
+  border: 0;
+  height: 1px;
+  background-color: var(--rule-background);
+}
