@@ -134,7 +134,12 @@ public extension Node where Context == HTML.BodyContext {
     }
     
     static func post<T: Website>(for location: Location, with item:Item<T>, on site: T) -> Node<Context> {
-        .text(item.title)
+        .group(
+            .h2(
+                .text(item.title)
+            ),
+            .contentBody(item.content.body)
+        )
     }
     
     static func footer<T: Website>(for location: Location, on site: T) -> Node<Context> {
