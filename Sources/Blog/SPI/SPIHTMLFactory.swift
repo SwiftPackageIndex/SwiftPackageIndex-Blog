@@ -32,7 +32,34 @@ struct SPIHTMLFactory<Site: Website>: HTMLFactory {
     }
 
     func makeSectionHTML(for section: Section<Site>, context: PublishingContext<Site>) throws -> HTML {
-        HTML(.text("Empty"))
+        HTML(
+            .lang(context.site.language),
+            .headSPI(for: section, on: context.site),
+            .body(
+                .analyticsBody(),
+                .developmentBanner(),
+                .header(on: context.site),
+                .main(on: context.site) { site -> Node<HTML.BodyContext> in
+                    .group(
+                        .h2("Blog Posts"),
+                        .ul(
+                            .forEach(context.allItems(sortedBy: \.date, order: .descending)) { item in
+                                .li(
+                                    .a(
+                                        .href(item.path),
+                                        .text(item.title)
+                                    )
+                                )
+                            }
+                        ),
+                        .hr()
+                    )
+                },
+                .footer(on: context.site),
+                .developmentBanner()
+
+            )
+        )
     }
 
     func makeItemHTML(for item: Item<Site>, context: PublishingContext<Site>) throws -> HTML {
@@ -54,7 +81,7 @@ struct SPIHTMLFactory<Site: Website>: HTMLFactory {
     }
 
     func makePageHTML(for page: Page, context: PublishingContext<Site>) throws -> HTML {
-        HTML(.text("Empty"))
+        HTML(.empty)
     }
 
     func makeTagListHTML(for page: TagListPage, context: PublishingContext<Site>) throws -> HTML? {
