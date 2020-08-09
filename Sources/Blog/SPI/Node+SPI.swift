@@ -139,8 +139,9 @@ public extension Node where Context == HTML.BodyContext {
     
     static func footer<T: Website>(for location: Location, on site: T) -> Node<Context> {
         .footer(
-            .div(.class("inner"),
-                 .nav(
+            .div(
+                .class("inner"),
+                .nav(
                     .ul(
                         .li(
                             .a(
@@ -161,7 +162,7 @@ public extension Node where Context == HTML.BodyContext {
                             "Kindly hosted by MacStadium"
                         )
                     )
-                 )
+                )
             )
         )
     }
