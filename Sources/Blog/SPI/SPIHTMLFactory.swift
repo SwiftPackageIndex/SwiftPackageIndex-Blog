@@ -18,13 +18,13 @@ struct SPIHTMLFactory<Site: Website>: HTMLFactory {
             .body(
                 .analyticsBody(),
                 .developmentBanner(),
-                .header(for: index, on: context.site),
-                .main(for: index, on: context.site) { index, site -> Node<HTML.BodyContext> in
+                .header(on: context.site),
+                .main(on: context.site) { site -> Node<HTML.BodyContext> in
                     .forEach(context.allItems(sortedBy: \.date, order: .descending)) { item in
-                        .post(for: index, with: item, on: context.site)
+                        .post(with: item, on: context.site)
                     }
                 },
-                .footer(for: index, on: context.site),
+                .footer(on: context.site),
                 .developmentBanner()
 
             )
@@ -36,7 +36,21 @@ struct SPIHTMLFactory<Site: Website>: HTMLFactory {
     }
 
     func makeItemHTML(for item: Item<Site>, context: PublishingContext<Site>) throws -> HTML {
-        HTML(.text("Empty"))
+        HTML(
+            .lang(context.site.language),
+            .headSPI(for: item, on: context.site),
+            .body(
+                .analyticsBody(),
+                .developmentBanner(),
+                .header(on: context.site),
+                .main(on: context.site) { site -> Node<HTML.BodyContext> in
+                    .post(with: item, on: context.site)
+                },
+                .footer(on: context.site),
+                .developmentBanner()
+
+            )
+        )
     }
 
     func makePageHTML(for page: Page, context: PublishingContext<Site>) throws -> HTML {

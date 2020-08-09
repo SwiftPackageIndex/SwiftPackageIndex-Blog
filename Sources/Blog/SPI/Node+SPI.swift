@@ -102,7 +102,7 @@ public extension Node where Context == HTML.BodyContext {
         }
     }
     
-    static func header<T: Website>(for location: Location, on site: T) -> Node<Context> {
+    static func header<T: Website>(on site: T) -> Node<Context> {
         .header(
             .div(
                 .class("inner"),
@@ -127,14 +127,15 @@ public extension Node where Context == HTML.BodyContext {
         )
     }
 
-    static func main<T:Website>(for location: Location, on site: T, content:(Location, T) -> Node<Context>) -> Node <Context> {
+    static func main<T:Website>(on site: T, content:(T) -> Node<Context>) -> Node <Context> {
         .div(
             .class("inner"),
-            content(location, site)
+            content(site),
+            .whatIsTheSPI()
         )
     }
     
-    static func post<T: Website>(for location: Location, with item:Item<T>, on site: T) -> Node<Context> {
+    static func post<T: Website>(with item:Item<T>, on site: T) -> Node<Context> {
         .group(
             .h2(
                 .class("post"),
@@ -154,11 +155,31 @@ public extension Node where Context == HTML.BodyContext {
             .element(named: "hr", nodes:[
                 .attribute(named: "class", value: "post")
             ]),
-            .contentBody(item.content.body)
+            .contentBody(item.content.body),
+            .hr()
         )
     }
-    
-    static func footer<T: Website>(for location: Location, on site: T) -> Node<Context> {
+
+    static func whatIsTheSPI() -> Node<Context> {
+        .div(
+            .class("what"),
+            "The ",
+            .a(
+                .href("https://swiftpackageindex.com"),
+                "Swift Package Index"
+            ),
+            " is a search engine for Swift packages with one goal. ",
+            .strong("To help you make better decisions about dependencies."),
+            " For more information, the best place to start is with the ",
+            .a(
+                .href("https://swiftpackageindex.com/faq"),
+                "Frequently Asked Questions"
+            ),
+            "."
+        )
+    }
+
+    static func footer<T: Website>(on site: T) -> Node<Context> {
         .footer(
             .div(
                 .class("inner"),
