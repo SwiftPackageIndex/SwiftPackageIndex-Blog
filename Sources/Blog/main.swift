@@ -25,6 +25,6 @@ struct Blog: Website {
 try Blog().publish(
     withTheme: .spi,
     additionalSteps: [
-        .deploy(using: .gitHub("SwiftPackageIndex/SwiftPackageIndex-Blog"))
+        .deploy(using: .gitHub("SwiftPackageIndex/SwiftPackageIndex.github.io"))
     ]
 )
