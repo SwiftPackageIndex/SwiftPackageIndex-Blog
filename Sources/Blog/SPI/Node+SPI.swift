@@ -101,7 +101,7 @@ public extension Node where Context == HTML.BodyContext {
         }
     }
     
-    static func header<T: Website>(on site: T) -> Node<Context> {
+    static func header<T: Website>(for location: Location, on site: T) -> Node<Context> {
         .header(
             .div(
                 .class("inner"),
@@ -126,18 +126,18 @@ public extension Node where Context == HTML.BodyContext {
         )
     }
 
-    static func main<T:Website>(on site: T, content:(T) -> Node<Context>) -> Node <Context> {
+    static func main<T:Website>(for location: Location, on site: T, content:(Location, T) -> Node<Context>) -> Node <Context> {
         .div(
             .class("inner"),
-            content(site)
+            content(location, site)
         )
     }
     
-    static func post<T: Website>(from item:Item<T>, on site: T) -> Node<Context> {
+    static func post<T: Website>(for location: Location, with item:Item<T>, on site: T) -> Node<Context> {
         .text(item.title)
     }
     
-    static func footer<T: Website>(on site: T) -> Node<Context> {
+    static func footer<T: Website>(for location: Location, on site: T) -> Node<Context> {
         .footer(
             .div(.class("inner"),
                  .nav(
