@@ -9,8 +9,6 @@ import Foundation
 import Publish
 import Plot
 
-let resourceReloadQueryString = String(Int(Date().timeIntervalSince1970))
-
 public extension Node where Context == HTML.DocumentContext {
     static func headSPI<T: Website>(for location: Location, on site: T) -> Node<Context> {
         var title = location.title
@@ -24,6 +22,9 @@ public extension Node where Context == HTML.DocumentContext {
         if description.isEmpty {
             description = site.description
         }
+        
+        // The generation date of the site, so the CSS is never out of date.
+        let resourceReloadQueryString = String(Int(Date().timeIntervalSince1970))
         
         let stylesheetPaths = [
             Path("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"),
