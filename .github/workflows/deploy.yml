@@ -18,7 +18,6 @@ jobs:
       run: |
         echo "$ACTIONS_DEPLOY_KEY" > ~/.ssh/id_rsa
         chmod 0600 ~/.ssh/id_rsa
-        ssh -T -vv git@github.com
       env:
         ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
     - name: Build Publish
