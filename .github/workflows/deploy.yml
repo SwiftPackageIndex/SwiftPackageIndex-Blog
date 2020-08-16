@@ -19,7 +19,12 @@ jobs:
         git clone https://github.com/JohnSundell/Publish.git
         cd Publish
         make
-    - name: Generate Static Site
-      run: env PUBLISH_ENV=production && publish generate && publish deploy
+    - name: Write Deploy Key
+      run: |
+        mkdir ~/.ssh
+        echo $ACTIONS_DEPLOY_KEY > ~/.ssh/id_rsa
+        chmod 0400 ~/.ssh/id_rsa
       env:
         ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+    - name: Generate Static Site
+      run: env PUBLISH_ENV=production && publish generate && publish deploy
