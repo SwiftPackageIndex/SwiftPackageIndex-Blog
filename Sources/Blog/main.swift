@@ -1,6 +1,7 @@
 import Foundation
 import Publish
 import Plot
+import CNAMEPublishPlugin
 
 struct Blog: Website {
 
@@ -25,6 +26,7 @@ struct Blog: Website {
 try Blog().publish(
     withTheme: .spi,
     additionalSteps: [
+        .installPlugin(.generateCNAME(with: "blog.swiftpackageindex.com")),
         .deploy(using: .gitHub("SwiftPackageIndex/SwiftPackageIndex.github.io"))
     ]
 )
