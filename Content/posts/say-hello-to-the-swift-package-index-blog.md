@@ -10,8 +10,8 @@ It’s always hard to know when to ship v1 of a project. Which features get incl
 
 One decision we made when shipping the [Swift Package Index](https://swiftpackageindex.com) was that a blog could wait. Looking back now, it feels like that was the right decision. The launch went smoothly, you all reacted very kindly and positively to it, and we went back to work fixing bugs and working on new features.
 
-However, we always knew we’d need somewhere to write about what we are doing with this project. There are too many technical challenges that we had to solve, that we’d love to tell you about, but most of all we want to tell you about the new features we’ve been building...
+However, we always knew we’d need somewhere to write about what we are doing with this project. We’d love to tell you about some of the interesting technical challenges we faced, but most of all we want to tell you about the new features we’ve been building...
 
-What features? You’ll have to wait just one more week to find out exactly what we’ve been working on, but we’re pretty excited about it, and that’s why now was the right time to launch this blog.
+What features? You’ll have to wait just one more week to find out what we’ve been working on, but we’re pretty excited about it, and that’s why now was the right time to launch this blog.
 
-<span class="dim">Now we just need to keep writing on it!</span>
+<p class="dim">Now we just need to keep writing on it! 😬</p>
