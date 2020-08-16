@@ -7,7 +7,7 @@ on:
     branches: [ master ]
 
 jobs:
-  validate:
+  deploy:
     runs-on: macos-latest
     steps:
     - name: Checkout
@@ -21,8 +21,8 @@ jobs:
         make
     - name: Write Deploy Key
       run: |
-        echo $ACTIONS_DEPLOY_KEY > ~/.ssh/id_rsa
-        chmod 0600 ~/.ssh/id_rsa
+        echo $ACTIONS_DEPLOY_KEY > ~/.ssh/id_ed25519
+        chmod 0600 ~/.ssh/id_ed25519
       env:
         ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
     - name: Generate Static Site
