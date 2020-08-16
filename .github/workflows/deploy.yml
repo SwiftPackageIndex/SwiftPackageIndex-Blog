@@ -16,7 +16,7 @@ jobs:
       run: sudo xcode-select -s /Applications/Xcode_12.app && xcodebuild -version
     - name: Write Deploy Key
       run: |
-        echo $ACTIONS_DEPLOY_KEY > ~/.ssh/id_rsa
+        echo "$ACTIONS_DEPLOY_KEY" > ~/.ssh/id_rsa
         chmod 0600 ~/.ssh/id_rsa
         ssh -T -vv git@github.com
       env:
