@@ -21,9 +21,8 @@ jobs:
         make
     - name: Write Deploy Key
       run: |
-        mkdir ~/.ssh
         echo $ACTIONS_DEPLOY_KEY > ~/.ssh/id_rsa
-        chmod 0400 ~/.ssh/id_rsa
+        chmod 0600 ~/.ssh/id_rsa
       env:
         ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
     - name: Generate Static Site
