@@ -15,6 +15,8 @@ extension Theme {
             resourcePaths: [
                 "Resources/deploy/stylesheets/main.min.css",
                 "Resources/deploy/stylesheets/main.min.css.map",
+                "Resources/deploy/javascripts/main.min.js",
+                "Resources/deploy/javascripts/main.min.js.map",
                 "Resources/deploy/images/logo.svg"
             ]
         )
