@@ -110,17 +110,13 @@ public extension Node where Context == HTML.BodyContext {
                     .href("/"),
                     .h1(
                         .img(.src("/logo.svg")),
-                        "Swift Package Index"
+                        "The Swift Package Index Blog"
                     )
                 ),
                 .nav(
-                    .ul(
-                        .li(
-                            .a(
-                                .href("https://swiftpackageindex.com"),
-                                .text("Home")
-                            )
-                        )
+                    .a(
+                        .href("https://swiftpackageindex.com"),
+                        .text("Visit the Swift Package Index")
                     )
                 )
             )

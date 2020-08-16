@@ -2,21 +2,6 @@
   Styles specific for blog posts or the blog layout in general.
 ---------------------------------------------------------------------------- */
 
-:root {
-  --post-rule: var(--light-grey);
-
-  --what-is-background: var(--very-light-blue);
-  --what-is-border: var(--mid-blue);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --post-rule: var(--dark-grey);
-
-    --what-is-background: var(--dark-blue);
-  }
-}
-
 h2.post {
   margin-bottom: 0;
 
