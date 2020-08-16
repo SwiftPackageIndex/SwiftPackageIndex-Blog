@@ -26,4 +26,6 @@ jobs:
         cd Publish
         make
     - name: Generate Static Site
-      run: env PUBLISH_ENV=production && publish generate && publish deploy
+      run: publish generate && publish deploy
+      env:
+        PUBLISH_ENV: production
