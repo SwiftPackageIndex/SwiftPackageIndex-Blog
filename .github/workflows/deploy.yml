@@ -16,13 +16,11 @@ jobs:
       run: sudo xcode-select -s /Applications/Xcode_12.app && xcodebuild -version
     - name: Write Deploy Key
       run: |
-        echo $DAVE > ~/.ssh/id_ed25519
-        chmod 0600 ~/.ssh/id_ed25519
-        cat ~/.ssh/id_ed25519
+        echo $ACTIONS_DEPLOY_KEY > ~/.ssh/id_rsa
+        chmod 0600 ~/.ssh/id_rsa
         ssh -T git@github.com
       env:
         ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-        DAVE: Hello Dave
     - name: Build Publish
       run: |
         git clone https://github.com/JohnSundell/Publish.git
