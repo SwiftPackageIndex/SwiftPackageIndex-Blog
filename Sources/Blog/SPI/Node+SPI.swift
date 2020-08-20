@@ -124,12 +124,12 @@ public extension Node where Context == HTML.BodyContext {
     }
 
     static func main<T:Website>(on site: T, content:(T) -> Node<Context>) -> Node <Context> {
-        .div(
-            .class("inner"),
-            .main(
-                content(site)
-            ),
-            .whatIsTheSPI()
+        .main(
+            .div(
+                .class("inner"),
+                content(site),
+                .whatIsTheSPI()
+            )
         )
     }
     
