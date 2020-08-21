@@ -81,6 +81,6 @@ Finally, we’d love to say thank you to everyone who provided help and feedback
 
 ### Wrapping up
 
-Some package authors set up continuous integration for their packages, but typically only with the latest version of Swift, and the information gets hidden away in a different place in each repo. We think that by centralising this data, and making it available for *all* packages, we should be able to help this community make better decisions about their dependencies, and that’s what this site is all about.
+Some package authors set up continuous integration for their packages, but typically only with the latest version of Swift, and the information gets hidden away in a different place in each repo. We think that by centralising this data and making it available for *all* packages, we should be able to help this community make better decisions about their dependencies, and that’s what this site is all about.
 
 We hope you love this feature as much as we do! ❤️
