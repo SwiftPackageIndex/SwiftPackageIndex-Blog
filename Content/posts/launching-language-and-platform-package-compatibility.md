@@ -15,7 +15,10 @@ The problem is that neither of those properties is perfect. `swiftLanguageVersio
 
 Wouldn’t it be fantastic if you could see a matrix like this for *every* package? 😍
 
-XXXXXXXX – Screenshot – XXXXXXXX
+<picture>
+  <source srcset="/images/promisekit-language-and-platform-metadata~dark.png" media="(prefers-color-scheme: dark)">
+  <img src="/images/promisekit-language-and-platform-metadata~light.png" alt="The language and platform compatibility matrix for PromiseKit.">
+</picture>
 
 When we started thinking about how best to solve this problem, the obvious best solution was to build the packages! What better way to see if a package is compatible with Swift 4.2 than to build it with the version of `xcodebuild` that shipped with Xcode 10.1.
 
