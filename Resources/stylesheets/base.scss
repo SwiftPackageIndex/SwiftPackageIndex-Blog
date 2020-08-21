@@ -64,6 +64,15 @@ pre {
   overflow: scroll;
 }
 
+blockquote {
+  padding: 10px;
+  border-left: 2px var(--grey) solid;
+
+  p {
+    margin: 0;
+  }
+}
+
 hr {
   margin: 40px 0;
   border: 0;
