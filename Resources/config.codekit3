@@ -43,7 +43,7 @@
 		"oAP": "/deploy/images/promisekit-language-and-platform-metadata~dark.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -54,7 +54,7 @@
 		"oAP": "/deploy/images/promisekit-language-and-platform-metadata~light.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -191,7 +191,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "brackets_teal",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 619656617.38959706
+	"lastBuiltDate": 619298286.66506898
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
