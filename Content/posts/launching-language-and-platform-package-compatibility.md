@@ -51,7 +51,7 @@ We then decided on a list of Swift compiler versions we’d like to check compat
 * Swift 5.2 (5.2.4)
 * Swift 5.3 (beta)
 
-That’s up to 32 builds per package, but that’s just the beginning. What if there’s a stable release and a beta release? The stable version might support Swift 4.2 and higher, and the new beta might drop support for anything less than Swift 5.2. That’s information which would be important when choosing a package, so we need to show it. As we also track the status of the default branch, we must build that too, and we’ve quickly arrived at a place where we might need to 96 builds *per package*! With almost 3,200 packages in the index, that’s potentially more than 300,000 builds! 😅
+That’s up to 32 builds per package, but that’s just the beginning. What if there’s a stable release and a beta release? The stable version might support Swift 4.2 and higher, and the new beta might drop support for anything less than Swift 5.2. That’s information which would be important when choosing a package, so we need to show it. As we also track the status of the default branch, we must build that too, and we’ve quickly arrived at a place where we might need to run 96 builds *per package*! With almost 3,200 packages in the index, that’s potentially more than 300,000 builds! 😅
 
 In practice, it’s less than that as most packages don’t have a current beta release, but it’s still a *lot* of builds. We’ve processed about 200,000 builds as I write this, and we’re not quite finished. As of today, we’re at 98% though, so we almost made it before launch! 😬
 
