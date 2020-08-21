@@ -51,7 +51,7 @@ If you’ve been following [these tweets](https://twitter.com/daveverwer/status/
 
 ![A graph showing a few spikes of CPU activity, followed by a sustained 100% CPU load.](/images/production-server-thirty-day-cpu-graph.png)
 
-You can see a few of our final test runs in that graph, and then we started processing for real. Since then, we’ve kept the CPU completely pegged for more than two weeks. We’ve also had our staging Mac mini, and a DTK working on builds too.
+You can see a few of our final test runs in that graph, and then we started processing for real. Since then, we’ve kept the CPU completely pegged for more than two weeks. We’ve also had our staging Mac mini, a spare 2016 MacBook Pro, and a DTK working on builds too.
 
 ### Everyone loves badges
 
