@@ -53,7 +53,7 @@ We then decided on a list of Swift compiler versions we’d like to check compat
 
 That’s up to 32 builds per package, but that’s just the beginning. What if there’s a stable release and a beta release? The stable version might support Swift 4.2 and higher, and the new beta might drop support for anything less than Swift 5.2. That’s information which would be important when choosing a package, so we need to show it. As we also track the status of the default branch, we must build that too, and we’ve quickly arrived at a place where we might need to run 96 builds *per package*! With almost 3,200 packages in the index, that’s potentially more than 300,000 builds! 😅
 
-In practice, it’s less than that as most packages don’t have a current beta release, but it’s still a *lot* of builds. We’ve processed more than 200,000 builds as I write this, and we’re not quite finished. As of today, we’re at 98% though, so we almost made it before launch! 😬
+In practice, it’s less than that as most packages don’t have a current beta release, but it’s still a *lot* of builds. We’ve processed more than 200,000 builds as I write this, and we’re not quite finished. As of today, we’re at 99% though, so we almost made it before launch! 😬
 
 If you’ve been following [these tweets](https://twitter.com/daveverwer/status/1291808885259620353), it should be obvious what all that processing was! Let’s take a look at the last **30 days** of CPU graphs for our production server, a 2018 Mac mini with 32Gb RAM and a 6-core i7 CPU:
 
