@@ -4,9 +4,12 @@ title: Launching Language and Platform Package Compatibility
 description:
 ---
 
-When we first started thinking about what features a package index might have, being able to quickly and easily see what versions of Swift, and what platforms a package supports was high on our list.
 
-The *simplest* way to get this data is from the [`swiftLanguageVersions`](https://developer.apple.com/documentation/swift_packages/package/3197887-swiftlanguageversions) and [`platforms`](https://developer.apple.com/documentation/swift_packages/package/3197886-platforms) properties of the package manifest, and that’s what we shipped with when we [launched the site back in June](https://iosdevweekly.com/issues/460#start).
+What’s the first question you need an answer to after finding a package that fits your needs?
+
+> “Does this package work with the Swift version and platform that my app uses?”
+
+When we initially launched the Swift Package Index, we attempted to answer this question with the metadata available in the package manifest. Namely the [`swiftLanguageVersions`](https://developer.apple.com/documentation/swift_packages/package/3197887-swiftlanguageversions) and [`platforms`](https://developer.apple.com/documentation/swift_packages/package/3197886-platforms) properties.
 
 The problem is that neither of those properties is perfect. `swiftLanguageVersions` isn’t granular enough, only [officially](https://developer.apple.com/documentation/swift_packages/swiftversion) allowing values of `v4`, `v4_2`, and `v5`. The `platforms` property is better, but doesn’t let package authors declare compatibility with non-Apple operating systems such as Linux.
 
