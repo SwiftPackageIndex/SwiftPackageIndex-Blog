@@ -73,7 +73,7 @@ Your users will always see live, accurate compatibility information that updates
 
 ### Credit where it’s due!
 
-First of all, we’d like to thank our kind friends at [MacStadium](https://macstadium.com) for providing the significant hosting resources for this project as part of their [open-source programme](https://www.macstadium.com/opensource). At one point we were a little concerned that we might melt your machines. We’re glad that we didn’t. They’ve performed incredibly.
+First of all, we’d like to thank our kind friends at [MacStadium](https://macstadium.com) for providing the significant hosting resources for this project as part of their [open-source programme](https://www.macstadium.com/opensource). At one point we were a little concerned that we might melt their machines, and we very glad that we didn’t. They’ve performed incredibly.
 
 We also want to say thank you to [Ankit Aggarwal](https://twitter.com/aciidb0mb3r) and [Boris Bügling](https://twitter.com/neonacho) of Apple. Their tireless help and support on the [SwiftPM Slack](https://swift-package-manager.herokuapp.com) saved us countless hours figuring out the correct way to approach this problem.
 
@@ -81,6 +81,6 @@ Finally, we’d love to say thank you to everyone who provided help and feedback
 
 ### Wrapping up
 
-Some package authors set continuous integration for their packages and of course, that includes a build step. That usually only covers one version of Swift though, and the information gets hidden away in a different place in each repo. We think that by centralising this data and making it available for *all* packages, we should be able to help this community make better decisions about their dependencies, and that’s what this site is all about.
+Some package authors set up continuous integration for their packages and of course, that includes a build step. That usually only covers one version of Swift though, and the information gets hidden away in a different place in each repo. We think that by centralising this data and making it available for *all* packages, we should be able to help this community make better decisions about their dependencies, and that’s what this site is all about.
 
 We hope you love this feature as much as we do! ❤️
