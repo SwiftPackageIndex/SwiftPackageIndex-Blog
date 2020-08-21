@@ -15,7 +15,12 @@ The problem is that neither of those properties is perfect. `swiftLanguageVersio
 
 Wouldn’t it be fantastic if you could see a matrix like this for *every* package? 😍
 
-XXXXXXXX – Screenshot – XXXXXXXX
+<picture>
+  <source srcset="/images/promisekit-language-and-platform-metadata~dark.png" media="(prefers-color-scheme: dark)">
+  <img src="/images/promisekit-language-and-platform-metadata~light.png" alt="The language and platform compatibility matrix for PromiseKit.">
+</picture>
+
+Look at how information-rich that matrix is. You can instantly see that the latest stable version of [PromiseKit](https://swiftpackageindex.com/mxcl/PromiseKit) is compatible with every version of Swift back to 4.2, and every platform, including Linux. Then, you can see that the alpha version in development drops support for iOS, tvOS, and watchOS, and Swift 4.2. That seems suspicious, right? Keep looking, and you’ll see that the default branch fixes all those issues and restores compatibility. I’m confident looking at that matrix that when 7.0.0 is released, it’ll have green ticks across the board, but I also know to not depend on this current alpha. That’s practical, actionable information.
 
 When we started thinking about how best to solve this problem, the obvious best solution was to build the packages! What better way to see if a package is compatible with Swift 4.2 than to build it with the version of `xcodebuild` that shipped with Xcode 10.1.
 

@@ -36,6 +36,28 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/images/promisekit-language-and-platform-metadata~dark.png": {
+		"ft": 32768,
+		"iS": 82668,
+		"oA": 0,
+		"oAP": "/deploy/images/promisekit-language-and-platform-metadata~dark.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/images/promisekit-language-and-platform-metadata~light.png": {
+		"ft": 32768,
+		"iS": 78737,
+		"oA": 0,
+		"oAP": "/deploy/images/promisekit-language-and-platform-metadata~light.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/images/rester-readme-with-spi-badges.png": {
 		"ft": 32768,
 		"iS": 92269,
