@@ -25,6 +25,50 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/images/production-server-thirty-day-cpu-graph.png": {
+		"ft": 32768,
+		"iS": 284750,
+		"oA": 0,
+		"oAP": "/deploy/images/production-server-thirty-day-cpu-graph.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/images/promisekit-language-and-platform-metadata~dark.png": {
+		"ft": 32768,
+		"iS": 82668,
+		"oA": 0,
+		"oAP": "/deploy/images/promisekit-language-and-platform-metadata~dark.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/images/promisekit-language-and-platform-metadata~light.png": {
+		"ft": 32768,
+		"iS": 78737,
+		"oA": 0,
+		"oAP": "/deploy/images/promisekit-language-and-platform-metadata~light.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/images/rester-readme-with-spi-badges.png": {
+		"ft": 32768,
+		"iS": 92269,
+		"oA": 0,
+		"oAP": "/deploy/images/rester-readme-with-spi-badges.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/javascripts/external_link_retargeter.js": {
 		"bF": 0,
 		"ft": 64,
@@ -147,7 +191,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "brackets_teal",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 619298286.66506898
+	"lastBuiltDate": 619656617.38959706
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
