@@ -1,5 +1,5 @@
 ---
-date: 2020-08-20 12:00
+date: 2020-09-09 12:00
 title: Building 3,238 Swift Packages for Apple Silicon
 description: As part of the Swift Package Index build system, we have processed what must be the most extensive test of Apple Silicon compatibility outside of Apple. Here's what we found.
 ---
