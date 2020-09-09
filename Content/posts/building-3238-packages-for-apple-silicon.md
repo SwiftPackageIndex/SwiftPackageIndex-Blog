@@ -4,7 +4,7 @@ title: Building 3,238 Swift Packages for Apple Silicon
 description: As part of the Swift Package Index build system, we have processed what must be the most extensive test of Apple Silicon compatibility outside of Apple. Here’s what we found.
 ---
 
-As part of the [Swift Package Index build system](https://blog.swiftpackageindex.com/posts/launching-language-and-platform-package-compatibility/), we have processed what must be the most extensive test of Apple Silicon compatibility outside of Apple.
+As part of the [Swift Package Index build system](/posts/launching-language-and-platform-package-compatibility/), we have processed what must be the most extensive test of Apple Silicon compatibility outside of Apple.
 
 At the time of writing, we currently have 12,942 Apple Silicon builds in our database covering 3,238 packages. Why so many? We test up to [three versions of each package](https://swiftpackageindex.com/SwifQL/SwifQL/builds) and compile each version with both `xcodebuild` and `swift build`.
 
