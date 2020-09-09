@@ -18,10 +18,10 @@ There are failures though, and the most interesting are those where the build fa
 
 There are a few common errors that we’re observing in these failures, and most of them are from one of the following problems:
 
+- Any inline assembly will fail, obviously!
 - `Float80` is unavailable.
 - `x86\_thread\_state64\_t` is unavailable.
 - `\_\_darwin\_arm\_thread\_state64' has no member '\_\_rsp'`.
-- `\_\_asm\_\_("movq %rdi, %r13")`.
 - `cannot convert value of type 'CVaListPointer' to expected argument type '\_\_darwin\_va\_list?'`.
 - Sometimes, the compiler crashes!
 
