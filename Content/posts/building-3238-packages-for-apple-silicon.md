@@ -12,7 +12,7 @@ I’m sure that many of the Apple Silicon DTK machines Apple has shipped around 
 
 ## What did we find?
 
-First of all, and as you might expect, there’s plenty of good news. For packages with successful Intel builds, the *vast majority* are also successful when built for Apple Silicon. 👍
+First of all, and as you might expect, there’s plenty of good news. For packages with successful Intel builds, the *vast majority* also successfully build for Apple Silicon. 👍
 
 There are failures though, and the most interesting are those where the build fails on Apple Silicon while the corresponding Intel build succeeds. In cases like this, that indicates a compatibility issue that will potentially need some attention from the package author. We’ve identified 70 packages (~2%) where this is the case, and have [compiled a list of them for reference](https://gist.github.com/daveverwer/ae08ad14a7a975e0488503282b4f1dbf).
 
