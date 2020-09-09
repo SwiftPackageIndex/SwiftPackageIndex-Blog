@@ -20,9 +20,9 @@ There are a few common errors that we’re observing in these failures, and most
 
 - Any inline assembly will fail, obviously!
 - `Float80` is unavailable.
-- `x86\_thread\_state64\_t` is unavailable.
-- `\_\_darwin\_arm\_thread\_state64' has no member '\_\_rsp'`.
-- `cannot convert value of type 'CVaListPointer' to expected argument type '\_\_darwin\_va\_list?'`.
+- `x86_thread_state64_t` is unavailable.
+- `__darwin_arm_thread_state64' has no member '__rsp'`.
+- `cannot convert value of type 'CVaListPointer' to expected argument type '__darwin_va_list?'`.
 - Sometimes, the compiler crashes!
 
 Even though 139 failing packages might sound like a lot, it’s not that bad, especially when you consider that many of the failures all fail due to an issue in a common base dependency, [`PerfectLib`](https://swiftpackageindex.com/PerfectlySoft/Perfect).
