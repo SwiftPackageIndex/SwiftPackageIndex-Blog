@@ -33,5 +33,5 @@ Even though the results are generally positive, it does show that there’s a bi
 
 If you’re a package author and do not have a DTK machine at your disposal, please feel free to use ours via the Swift Package Index build system! Make changes to your packages, push them to a pre-release tag (for example, X.X.X-arm-beta-X) and the build system will pick up that tag and build it. You should see new build results, usually within a couple of hours of pushing a tag.
 
-If you have any problems with the build system, we’re available in the #swiftpackageindex channel over at the [SwiftPM Slack](https://swift-package-manager.herokuapp.com).
+If you have any problems with the build system, there's a couple of ways to contact us. We're in the ``#swiftpackageindex` channel over at the [SwiftPM Slack](https://swift-package-manager.herokuapp.com), or if it looks like there might be something wrong, please [raise an issue on GitHub](https://github.com/SwiftPackageIndex/SwiftPackageIndex-Server/issues/new).
 
