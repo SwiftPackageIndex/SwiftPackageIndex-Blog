@@ -19,6 +19,7 @@ extension Theme {
                 "Resources/deploy/javascripts/main.min.js.map",
                 "Resources/deploy/images/promisekit-language-and-platform-metadata~light.png",
                 "Resources/deploy/images/promisekit-language-and-platform-metadata~dark.png",
+                "Resources/deploy/images/sponsorship-goal-100-sponsors.png",
                 "Resources/deploy/images/production-server-thirty-day-cpu-graph.png",
                 "Resources/deploy/images/rester-readme-with-spi-badges.png",
                 "Resources/deploy/images/logo.svg"
