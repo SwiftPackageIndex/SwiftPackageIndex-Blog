@@ -196,10 +196,17 @@ public extension Node where Context == HTML.BodyContext {
                             )
                         )
                     ),
+                    .p(
+                        .a(
+                            .href("https://github.com/sponsors/SwiftPackageIndex"),
+                            "Please consider supporting this project"
+                        )
+                    ),
                     .small(
+                        .text("Kindly hosted by"),
                         .a(
                             .href("https://macstadium.com/"),
-                            "Kindly hosted by MacStadium"
+                            "MacStadium"
                         )
                     )
                 )
