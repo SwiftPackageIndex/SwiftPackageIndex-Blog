@@ -12,13 +12,13 @@ We believe we’re off to a great start with what we have so far, but this is on
 
 Many open-source projects are just code and don’t need constant maintenance and monitoring, but the Swift Package Index is a little different. It’s a hosted instance of the site with a [reasonably complex automated build system](/posts/launching-language-and-platform-package-compatibility/) that has run over 600,000 builds so far (increasing by 7,000 more every day!). It takes significant time and effort to keep things running smoothly.
 
-We want to find a way to make sure that we can continue to give this site the time and attention it needs but we don’t really want to go down the route of including advertising. Instead, we are opening up [sponsorship on GitHub](https://github.com/sponsors/SwiftPackageIndex).
+We want to find a way to make sure that we can continue to give this site the time and attention it needs, but we don’t really want to go down the route of including advertising. Instead, we are opening up [sponsorship on GitHub](https://github.com/sponsors/SwiftPackageIndex).
 
-If you (or your company) would like to support the site, we would be thrilled to be able to make this a community funded effort for years to come.
+If you (or your company) would like to support the site, we would be thrilled to be able to make this a community-funded effort for years to come.
 
 [![A screenshot of our GitHub sponsors goal showing 1% of 100 sponsors.](/images/sponsorship-goal-100-sponsors.png)](https://github.com/sponsors/SwiftPackageIndex)
 
-Thanks to [Oliver](https://twitter.com/cocoanetics) who beat us to even announcing this by sponsoring the project yesterday. Thanks for being our very first sponsor!
+Also, a huge thanks to [Oliver](https://twitter.com/cocoanetics), who beat us to even announcing this by sponsoring the project yesterday! Thanks for being our very first sponsor. 😍
 
 Thank you!
 Dave & Sven
