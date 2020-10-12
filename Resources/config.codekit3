@@ -69,6 +69,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/images/sponsorship-goal-100-sponsors.png": {
+		"ft": 32768,
+		"iS": 71282,
+		"oA": 0,
+		"oAP": "/deploy/images/sponsorship-goal-100-sponsors.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/javascripts/external_link_retargeter.js": {
 		"bF": 0,
 		"ft": 64,
@@ -191,7 +202,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "brackets_teal",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 619298286.66506898
+	"lastBuiltDate": 624181812.03979397
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
