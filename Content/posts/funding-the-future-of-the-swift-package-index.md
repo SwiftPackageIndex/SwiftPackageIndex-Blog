@@ -20,6 +20,6 @@ If you (or your company) would like to support the site, we would be thrilled to
 
 Also, a huge thanks to [Oliver](https://twitter.com/cocoanetics), who beat us to even announcing this by sponsoring the project yesterday! Thanks for being our very first sponsor. 😍
 
-Thank you!
+Thank you!  
 Dave & Sven
 
