@@ -71,12 +71,12 @@
 		},
 	"/images/sponsorship-goal-100-sponsors.png": {
 		"ft": 32768,
-		"iS": 71282,
+		"iS": 66194,
 		"oA": 0,
 		"oAP": "/deploy/images/sponsorship-goal-100-sponsors.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -202,7 +202,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "brackets_teal",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 624181812.03979397
+	"lastBuiltDate": 624182222.70380294
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
