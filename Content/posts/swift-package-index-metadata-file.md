@@ -36,17 +36,17 @@ Our builders are looking for this file and use the scheme indicated for the give
 
 Another use case for the `.spi.yml` manifest file is to configure custom base images for our Linux builds.
 
-For our Linux build we run docker commands for various Swift version base images:
+When building for Linux, we run docker commands for various Swift version base images:
 
 ```bash
 /usr/local/bin/docker run --rm -v "$PWD":/host -w /host swiftlang/swift:5.2.4 swift build --enable-test-discovery
 ```
 
-This works great except when a package requires an OS level dependency to be available on the system. A common example is OpenSSL.
+This works great unless a package requires an OS level dependency like for instance OpenSSL.
 
-While we may eventually provide our own set of base images for each supported Swift version, we currently ask package authors whose builds fail with a plain Swift base image to create their own base images for the Swift versions they support.
+While we may eventually provide our own set of base images for each supported Swift version, we currently ask package authors whose builds fail with the default ones to create their own for the Swift versions they support.
 
-You will also need to inform us when you do so, because for security reasons we don’t allow arbitrary images and therefore need to add your images to our allow list.
+You will also need to inform us when you do so, because for security reasons we don’t support arbitrary images and therefore need to add your images to our allow list.
 
 The AWS library [Soto][5] is an example of a package that makes use of this feature in its [`.spi.yml` file][6]:
 
