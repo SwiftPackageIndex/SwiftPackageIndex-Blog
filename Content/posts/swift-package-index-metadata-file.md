@@ -6,7 +6,7 @@ description: …
 
 The vast majority of the information you see in [the package index][1] is generated from a single URL, the location of the package’s git repository.
 
-From that URL, we’re able to gather a huge amount of metadata. We gather data from the repository itself, the package manifest, the GitHub API (yes, it’s GitHub only for now, but [we do plan to support other hosts][2]), and from running builds of the package to check compatibility with operating systems and Swift versions.
+From that URL we gather data from the repository itself, the package manifest, the GitHub API (yes, it’s GitHub only for now, but [we do plan to support other hosts][2]), and from running builds of the package to check compatibility with operating systems and Swift versions.
 
 ## Edge cases
 
