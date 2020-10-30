@@ -1,22 +1,26 @@
 ---
-date: 2020-mm-dd HH:MM
-title: The Swift Package Index Metadata File
+date: 2020-10-30 12:00
+title: The Swift Package Index Metadata File – First Steps
 description: …
 ---
 
-The Swift Package Index collects many pieces of information from various sources to compile its view of Swift packages. We call out to the Github API, we look at git repositories, and we run builds to check for compatibility.
+The vast majority of the information you see in [the package index](https://swiftpackageindex.com) is generated from a single URL, the location of the package’s git repository.
 
-None of this requires any configuration from the package authors – all we need to know is the repository url for your package (Github only, at the moment TODO: Link to Gitlab issue).
+From that URL, we’re able to gather a huge amount of metadata. We gather data from the repository itself, the package manifest, the GitHub API (yes, it’s GitHub only for now, but [we do plan to support other hosts](https://github.com/SwiftPackageIndex/SwiftPackageIndex-Server/issues/485)), and from running builds of the package to check compatibility with operating systems and Swift versions.
 
-This automation is taking us very far but it cannot cover every little detail that package authors may want to express about their packages.
+## Edge cases
 
-For instance, when we added the build system we quickly encountered packages with watchOS target that would fail to build. The reason was that when Xcode autodiscovers schemes, these are built including tests. This fails, because `XCTest` is not available on watchOS.
+Of course, as with everything in software development, it’s not long before you find yourself talking about edge cases. 
 
-The only way to make these package pass their watchOS builds is to add a scheme that builds without tests. Many packages already have such schemes in order to build for watchOS but because authors give these schemes a variety of names it is not possible to discover them (short of applying all sorts of fragile heuristics).
+While creating [the build system](posts/launching-language-and-platform-package-compatibility), we quickly encountered packages where watchOS targets failed to build. We use Xcode’s automatic scheme creation functionality while running builds, but Xcode generates schemes that always include test targets, and `XCTest` isn’t available on watchOS. Using automatic schemes for watchOS builds wasn’t going to work.
 
-## The `.spi.yml` manifest file
+The only way to have these builds succeed is for our build system to use a specific scheme, rather than an automatically created one. Many packages already have schemes for this purpose, but as package authors can give schemes any name, it’s not possible to easily discover them.
 
-A better way, we believe, is to give package authors a way to tell our build system which scheme to use to build for a particular platform. We support this via a configuration file `.spi.yml` at the root of your Swift package.
+## Enter the Swift Package Index configuration file
+
+Rather than trying to keep the build system 100% generic, we needed a mechanism for package authors to specify some configuration information, such as the scheme name to use to build watchOS targets.
+
+We support this via a configuration file, `.spi.yml` which we will look for in the root of your Swift package repository.
 
 ### Schemes for watchOS
 
@@ -30,23 +34,23 @@ builder:
     scheme: ComposableArchitecture_watchOS
 ```
 
-Our builders are looking for this file and use the scheme indicated for the given platform. If a platform is not listed we use the default heuristics to determine the scheme as outlined in our [build FAQ][4].
+Our build servers look for this file and use any scheme information we find for each platform. If a platform isn’t listed, we use our default heuristics to determine the scheme as outlined in our [build FAQ][4].
 
 ### Images for Linux
 
-Another use case for the `.spi.yml` manifest file is to configure custom base images for our Linux builds.
+Custom schemes aren’t all we support though. Package authors can also use the `.spi.yml` file is to configure custom docker base images for our Linux builds.
 
-When building for Linux, we run docker commands for various Swift version base images:
+We build packages for Linux with docker commands, selecting between the [various base images that Apple provide](https://hub.docker.com/r/swiftlang/swift).
 
 ```bash
 /usr/local/bin/docker run --rm -v "$PWD":/host -w /host swiftlang/swift:5.2.4 swift build --enable-test-discovery
 ```
 
-This works great unless a package requires an OS level dependency like for instance OpenSSL.
+This works well unless a package requires an OS-level dependency, like OpenSSL.
 
-While we may eventually provide our own set of base images for each supported Swift version, we currently ask package authors whose builds fail with the default ones to create their own for the Swift versions they support.
+We may eventually provide our own set of base images for supported Swift versions that also include common dependencies like OpenSSL. For now, we are asking package authors whose builds fail due to missing dependencies to create their own for the Swift versions they support.
 
-You will also need to inform us when you do so, because for security reasons we don’t support arbitrary images and therefore need to add your images to our allow list.
+For security reasons, we don’t allow package authors to specify arbitrary images in the configuration file, so if you need to use this feature, please [raise an issue asking for us to support a custom base image](https://github.com/SwiftPackageIndex/SwiftPackageIndex-Server/issues/new).
 
 The AWS library [Soto][5] is an example of a package that makes use of this feature in its [`.spi.yml` file][6]:
 
@@ -68,29 +72,26 @@ builder:
     image: adamfowlerphoto/aws-sdk-swift:5.3
 ```
 
-As for the custom schemes, you only need to specify this for Swift versions you are supporting.
-
 ## Future direction
 
-The Swift Package Manifest file is in its infancy and we created it to solve issues users were facing when adding supported platforms for their packages.
+It’s early days for this configuration file. We created it to solve issues which package authors were facing trying to make sure that the language and platform compatibility we report reflects reality.
 
-We expect this file to evolve, which is why it carries a version number. Here are some of the things we are planning to add over time, so that they can be controlled by package authors:
+We expect this file to evolve, which is why it carries a version number. Here are some of the things we are planning to add over time, so that package authors can control them:
 
-- list of authors, including urls (bio pages, twitter, etc)
-- keywords or categories
-- home page url
-- documentation page url
-- funding information/url
+- Author metadata. Full name, blog URL, Twitter account, etc.
+- Package keywords or categories.
+- The location of any hosted documentation for a package.
+- Sponsorship or funding information for a package.
 
-There are more things being discussed in [this issue on Github][7]. This is a great place to chime in if you have further suggestions.
+More metadata possibilities are under discussion in [this GitHub issue][7]. This is a great place to chime in if you have suggestions.
 
 ## File format
 
-We chose `YAML` as the file format because it is an uncontroversial, universally beloved format that is entirely [free of issues][8] 😬
+We chose `YAML` as the file format because it is an uncontroversial, universally beloved format that is entirely [free of issues][8]. 😬
 
-It is easy to read and edit manually and well supported for parsing from Swift. While it has some downsides as compared to JSON, we believe these aren’t as critical as the upsides and the fact that it supports comments.
+Seriously though, we chose YAML as it’s relatively easy for a human to read and write, and it’s well supported in Swift. While it has some downsides compared to JSON, we believe it’s a more practical format given that package authors need to create this file manually.
 
-Having said that, this file is a proposal and we’ll let adoption be the guide as to how well it is working in practise!
+Of course, we’ll let adoption be the guide as to how well it is working in practice!
 
 [1]:	https://github.com/pointfreeco/swift-composable-architecture
 [2]:	https://www.pointfree.co
