@@ -1,7 +1,7 @@
 ---
 date: 2020-08-20 12:00
 title: Launching Language and Platform Package Compatibility
-description: We decided that one of the most important pieces of information we could provide on a package metadata page was what versions of Swift, and what platfoms it was compatible with. BuildingtThat feature turned out to be quite an epic journey.
+description: We decided that one of the most important pieces of information we could provide on a package metadata page was what versions of Swift, and what platforms it was compatible with. BuildingtThat feature turned out to be quite an epic journey.
 ---
 
 
