@@ -21,7 +21,7 @@ While we’re on the subject of Twitter, we’d love to know what you’d like t
 
 ### Updates via RSS
 
-We’ve had RSS support for a while now, but we’ve not talked about it on the blog before, so it’s worth mentioning. If you’d like to keep up to date via a feed reader, or if you’d like more fine-grained control over what type of package updates you’d like to be notified of then subscribe to one of our RSS feeds:
+We’ve had RSS support for a while now, but we’ve not talked about it on the blog before, so it’s worth mentioning. If you’d prefer to keep up to date via a feed reader, or if you want fine-grained control over what type of package updates you’d like to be notified of then subscribe to one of our RSS feeds:
 
 * [New Packages](https://swiftpackageindex.com/packages.rss) – A feed with packages that are new to the Swift Package Index.
 * [All Package Releases](https://swiftpackageindex.com/releases.rss) – A feed of all new package version releases.
