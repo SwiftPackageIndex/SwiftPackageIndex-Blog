@@ -6,6 +6,8 @@ description: How do you keep up with new releases of the packages you use? How d
 
 How do you keep up with new releases of the packages you use? How do you discover new packages? It’s a tough challenge to keep up to date with everything that the community releases, so we have some announcements today that can help you stay informed!
 
+Before I get started with the announcements, I want to credit [James Sherlouk](https://twitter.com/JamesSherlouk) for his invaluable contributions to building the Twitter updates feature. He was instrumental in getting this feature up and running and has been making other improvements in several areas of the site since we launched. Thank you, James!
+
 ### Updates via Twitter
 
 You may already be following the [@SwiftPackages](https://twitter.com/SwiftPackages) account where we tweet occasional updates about the project. But as of yesterday, we’re also tweeting on the [@PackageFirehose](https://packagefirehose) account. As you might guess by the name, this is a high volume account that posts *every time* there’s a new package added to the index, and *every time* there’s a new release of a package that we track. It’s around 20 tweets a day, if that counts as high volume!
