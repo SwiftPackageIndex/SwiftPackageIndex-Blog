@@ -17,7 +17,7 @@ You may already be following the [@SwiftPackages](https://twitter.com/SwiftPacka
   <img src="/images/package-firehose-tweet~light.png" alt="A screenshot of a tweet from the package firehose account.">
 </picture>
 
-While we’re on the subject of Twitter, we’d love to know what you’d like to see us do with the [@SwiftPackages](https://twitter.com/SwiftPackages) account. we’ve set up a [short survey](https://iosdevweekly.typeform.com/to/t7uHYvXv) if you have a couple of minutes. We’d love to hear your opinions.
+While we’re on the subject of Twitter, we’d love to know what you’d like to see us do with the [@SwiftPackages](https://twitter.com/SwiftPackages) account. We’ve set up a [short survey](https://iosdevweekly.typeform.com/to/t7uHYvXv) if you have a couple of minutes. We’d love to hear your opinions.
 
 ### Updates via RSS
 
