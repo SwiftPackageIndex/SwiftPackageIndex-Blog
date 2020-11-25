@@ -10,7 +10,10 @@ How do you keep up with new releases of the packages you use? How do you discove
 
 You may already be following the [@SwiftPackages](https://twitter.com/SwiftPackages) account where we tweet occasional updates about the project. But as of yesterday, we’re also tweeting on the [@PackageFirehose](https://packagefirehose) account. As you might guess by the name, this is a high volume account that posts *every time* there’s a new package added to the index, and *every time* there’s a new release of a package that we track. On average, it’s about XXX tweets a day.
 
-![A screenshot of a tweet from the package firehose account.]()
+<picture>
+  <source srcset="/images/package-firehose-tweet~dark.png" media="(prefers-color-scheme: dark)">
+  <img src="/images/package-firehose-tweet~light.png" alt="A screenshot of a tweet from the package firehose account.">
+</picture>
 
 While we’re on the subject of Twitter, I’d love to know what you’d like to see us do with the [@SwiftPackages](https://twitter.com/SwiftPackages) account. I’ve set up a [short survey](https://iosdevweekly.typeform.com/to/t7uHYvXv) if you have a couple of minutes. We’d love to hear your opinions.
 
