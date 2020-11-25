@@ -12,7 +12,7 @@ You may already be following the [@SwiftPackages](https://twitter.com/SwiftPacka
 
 ![A screenshot of a tweet from the package firehose account.]()
 
-While we’re on the subject of Twitter, I’d love to know what you’d like to see us do with the [@SwiftPackages](https://twitter.com/SwiftPackages) account. I’ve set up a [4 question survey]() if you have a few minutes. We’d love to hear your opinions.
+While we’re on the subject of Twitter, I’d love to know what you’d like to see us do with the [@SwiftPackages](https://twitter.com/SwiftPackages) account. I’ve set up a [short survey](https://iosdevweekly.typeform.com/to/t7uHYvXv) if you have a couple of minutes. We’d love to hear your opinions.
 
 ### Updates via RSS
 
