@@ -12,4 +12,4 @@ We’re aware of a couple of problems with README files that [contain embedded H
 
 Of course, we’ve not been able to test every single README file, so If you notice any other issues, please let us know by [opening an issue](https://github.com/SwiftPackageIndex/SwiftPackageIndex-Server/issues/new/choose).
 
-Thank you for all your support this year, and we hope you enjoy this feature that brings our year of development on the Swift Package Index to an end. We have big plans for 2021 though!.
+Thank you for all your support this year, and we hope you enjoy this feature that brings our year of development on the Swift Package Index to an end. We have big plans for 2021 though!
