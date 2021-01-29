@@ -16,7 +16,6 @@ struct SPIHTMLFactory<Site: Website>: HTMLFactory {
             .lang(context.site.language),
             .headSPI(for: index, on: context.site),
             .body(
-                .analyticsBody(),
                 .developmentBanner(),
                 .header(on: context.site),
                 .main(on: context.site) { site -> Node<HTML.BodyContext> in
@@ -36,7 +35,6 @@ struct SPIHTMLFactory<Site: Website>: HTMLFactory {
             .lang(context.site.language),
             .headSPI(for: section, on: context.site),
             .body(
-                .analyticsBody(),
                 .developmentBanner(),
                 .header(on: context.site),
                 .main(on: context.site) { site -> Node<HTML.BodyContext> in
@@ -67,7 +65,6 @@ struct SPIHTMLFactory<Site: Website>: HTMLFactory {
             .lang(context.site.language),
             .headSPI(for: item, on: context.site),
             .body(
-                .analyticsBody(),
                 .developmentBanner(),
                 .header(on: context.site),
                 .main(on: context.site) { site -> Node<HTML.BodyContext> in
