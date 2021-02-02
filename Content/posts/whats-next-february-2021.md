@@ -1,6 +1,6 @@
 ---
 date: 2021-02-01 12:00
-title: What’s next for the Swift Package Index? February 2021
+title: What’s next? February 2021
 description: It’s been about seven months since we launched the Swift Package Index and we’ve been hard at work implementing a few major updates. Are we done? No, we are not!
 ---
 
