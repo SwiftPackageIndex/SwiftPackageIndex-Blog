@@ -10,27 +10,25 @@ But we’re far from done! 😅
 
 So, in the spirit of letting you all know what we’re planning for this project next, we wanted to start a regular series of blog posts about the direction we’re heading with feature development. We’ll post every couple of months, giving a quick recap of what we’ve achieved along with where we’re heading next. It’s not a formal roadmap. It’s more a declaration of where our focus will be for the next couple of months.
 
-## What’s next?
-
 So without further ado, what are we focusing on next?
 
-### Intermediate Search Page
+## Intermediate Search Page
 
 Currently, search results are displayed inline on the home page, which makes it hard to share package searches (there’s no URL for a search), or integrate with productivity tools like Alfred or Raycast, or even DuckDuckGo through their [bangs feature](https://duckduckgo.com/bang). We want to fix that.
 
-### Package Collections
+## Package Collections
 
-If you’ve been following the [package collection work](https://github.com/apple/swift-evolution/blob/main/proposals/0291-package-collections.md) in the SPM project, then it might have struck you that the Swift Package Index would be a great source of package collections, when they are added. We agree! We’ve been hard at working hard with the preparation for this feature already, and want to have something publicly available as soon as it makes sense with feature becoming available in SPM.
+If you’ve been following the [package collection work](https://github.com/apple/swift-evolution/blob/main/proposals/0291-package-collections.md) in the SPM project, then it might have struck you that the Swift Package Index would be a great source of package collections, when they are added. We agree! We’ve already been working hard to prepare for this feature and want to have something publicly available as soon as the feature becomes available in SPM.
 
-### Design updates
+## Design updates
 
-The site design suited our feature set at launch, but has become a little overloaded as we added features. This work has already started, with a new package page layout rolling out last Friday. There’s more to come though, including work on making the home page more interesting. The lists of recent package additions and recent package releases are fine, but we can do better!
+The site design suited our feature set at launch but has become a little overloaded as we added features. This work has already started, with a new package page layout rolling out last Friday. There’s more to do though, including improvements to the home page. The lists of recent package additions and recent package releases are fine, but we can do better!
 
-### The Swift Package Index macOS App
+## The Swift Package Index macOS App
 
-We’ve always wanted to create a Swift Package Index Mac app of some kind. The app’s main purpose would be to allow you to easily try packages out in a Swift Playground (utilising the wonderful [Arena](https://swiftpackageindex.com/finestructure/Arena) tool). But it could be so much more. We want to define what this app will do, and then get something out that works towards that definition. We talked about the interesting story behind this feature [on John Sundell’s podcast last year](https://www.swiftbysundell.com/podcast/75/), if you’re interested! 
+We’ve always wanted to create a Swift Package Index Mac app of some kind. The app’s main purpose would be to allow you to easily try packages out in a Swift Playground (utilising the wonderful [Arena](https://swiftpackageindex.com/finestructure/Arena) tool). But it might end up being more over the long term. We want to define what this app will do, and then get something out that works towards that definition. We talked about the interesting story behind the “Try this package” feature [on John Sundell’s podcast last year](https://www.swiftbysundell.com/podcast/75/) if you’re interested! 
 
-### And More…
+## And More…
 
 This is not a comprehensive list of things we’ll do. This is a young project, and we want to keep development agile. If we have a great idea, it may go into the plan ahead of everything you read above!
 
