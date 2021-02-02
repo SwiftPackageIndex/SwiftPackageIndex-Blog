@@ -16,15 +16,15 @@ So without further ado, what are we focusing on next?
 
 ### Intermediate Search Page
 
-Currently, search results are displayed inline on the home page, which makes it hard to integrate share package searches (there’s no URL for a search), or integrate with productivity tools like Alfred or Raycast, or even DuckDuckGo through their [bangs feature](https://duckduckgo.com/bang). We want to fix that.
+Currently, search results are displayed inline on the home page, which makes it hard to share package searches (there’s no URL for a search), or integrate with productivity tools like Alfred or Raycast, or even DuckDuckGo through their [bangs feature](https://duckduckgo.com/bang). We want to fix that.
 
 ### Package Collections
 
-If you’ve been following the [package collection work](https://github.com/apple/swift-evolution/blob/main/proposals/0291-package-collections.md) in the SPM project, then it might have struck you that the Swift Package Index would be a great source of package collections, when they are added. We agree! We’ve been working hard on the behind-the-scenes work for this already, and want to have something publicly available as soon as it makes sense with feature becoming available in SPM.
+If you’ve been following the [package collection work](https://github.com/apple/swift-evolution/blob/main/proposals/0291-package-collections.md) in the SPM project, then it might have struck you that the Swift Package Index would be a great source of package collections, when they are added. We agree! We’ve been hard at working hard with the preparation for this feature already, and want to have something publicly available as soon as it makes sense with feature becoming available in SPM.
 
 ### Design updates
 
-The initial site design suited our initial feature set but has become a little overloaded as we added features. This work has already started, with a new package page layout rolling out last Friday. There’s more design work coming though, including work on making the home page more interesting. Those two lists are fine, but we can do much more!
+The site design suited our feature set at launch, but has become a little overloaded as we added features. This work has already started, with a new package page layout rolling out last Friday. There’s more to come though, including work on making the home page more interesting. The lists of recent package additions and recent package releases are fine, but we can do better!
 
 ### The Swift Package Index macOS App
 
