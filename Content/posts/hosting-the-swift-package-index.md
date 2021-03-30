@@ -8,7 +8,7 @@ description: Making any open-source project sustainable for the long term is cha
 
 Making any open-source project sustainable for the long term is challenging. You need to find time to work on the code, plan out features, respond to feedback, and if the project is not only code but a live web site, it also needs hosting and regular maintenance.
 
-The Swift Package Index has slightly bigger hosting problems than most web sites too. In addition to web and database servers, we need a significant amount of processing power to monitor and analyse constant package releases and run our build machines that deal with the ~30,000 Swift builds per month that process through our [compatibility build system](https://blog.swiftpackageindex.com/posts/launching-language-and-platform-package-compatibility/). 😅
+The Swift Package Index has slightly bigger hosting problems than most web sites, too. In addition to web and database servers, we need a significant amount of processing power to monitor and analyse constant package releases and run our build machines that deal with the ~30,000 Swift builds per month that process through our [compatibility build system](https://blog.swiftpackageindex.com/posts/launching-language-and-platform-package-compatibility/). 😅
 
 We’re delighted to say that as of today, all of the Swift Package Index’s hosting problems are taken care of thanks to the generosity of two companies that believe in open-source.
 
