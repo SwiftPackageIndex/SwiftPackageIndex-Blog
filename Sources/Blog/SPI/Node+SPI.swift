@@ -94,7 +94,7 @@ public extension Node where Context == HTML.BodyContext {
                 .a(
                     .href("/"),
                     .h1(
-                        .img(.src("/logo.svg")),
+                        .img(.src("/images/logo.svg")),
                         "The Swift Package Index Blog"
                     )
                 ),
