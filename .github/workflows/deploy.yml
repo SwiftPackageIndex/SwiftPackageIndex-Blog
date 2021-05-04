@@ -6,12 +6,12 @@ on:
 
 jobs:
   deploy:
-    runs-on: macos-latest
+    runs-on: macos-11.0
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Select Xcode 12
-        run: sudo xcode-select -s /Applications/Xcode_12.app && xcodebuild -version
+      - name: Select Xcode 12.5
+        run: sudo xcode-select -s /Applications/Xcode_12.5.app && xcodebuild -version
       - name: Write Deploy Key
         run: |
           echo "$ACTIONS_DEPLOY_KEY" > ~/.ssh/id_rsa
