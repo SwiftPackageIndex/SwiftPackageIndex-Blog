@@ -12,7 +12,7 @@ Before we get started with the announcements, we want to credit [James Sherlouk]
 
 You may already be following the [@SwiftPackages](https://twitter.com/SwiftPackages) account where we tweet occasional updates about the project. But as of yesterday, we’re also tweeting on the [@PackageFirehose](https://twitter.com/packagefirehose) account. As you might guess by the name, this is a high volume account that posts _every time_ there’s a new package added to the index, and _every time_ there’s a new release of a package that we track. It’s around 20 tweets a day, if that counts as high volume!
 
-<picture>
+<picture class="shadow">
   <source srcset="/images/package-firehose-tweet~dark.png" media="(prefers-color-scheme: dark)">
   <img src="/images/package-firehose-tweet~light.png" alt="A screenshot of a tweet from the package firehose account.">
 </picture>
