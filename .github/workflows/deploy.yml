@@ -10,20 +10,29 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - uses: fwal/setup-swift@v1
+      - name: Install Swift 5.4
+        uses: fwal/setup-swift@v1
         with:
           swift-version: '5.4'
-      - name: Write Deploy Key
-        run: |
-          echo "$ACTIONS_DEPLOY_KEY" > ~/.ssh/id_rsa
-          chmod 0600 ~/.ssh/id_rsa
-        env:
-          ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-      - name: Build Publish
+      - name: Verify Swift version
+        run: swift --version
+      - name: Install Publish
         run: |
           git clone https://github.com/JohnSundell/Publish.git
           cd Publish
-          make
+          swift build -c release
+          mkdir $HOME/.local/bin
+          install .build/release/publish-cli $HOME/.local/bin/publish
+          echo "$HOME/.local/bin" >> $GITHUB_PATH
+      - name: Write Deploy Key
+        uses: shimataro/ssh-key-action@v2
+        with:
+          key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          known_hosts: github.com
+      - name: Configure Git
+        run: |
+          git config --global user.email "no-reply@swiftpackageindex.com"
+          git config --global user.name "GitHub Actions Runner"
       - name: Generate Static Site
         run: make deploy
         env:
