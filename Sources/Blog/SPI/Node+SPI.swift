@@ -28,11 +28,11 @@ public extension Node where Context == HTML.DocumentContext {
 
         let stylesheetPaths = [
             Path("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"),
-            Path("/main.min.css?" + resourceReloadQueryString)
+            Path("/main.css?" + resourceReloadQueryString)
         ]
         
         let javascriptPaths = [
-            Path("/main.min.js?" + resourceReloadQueryString)
+            Path("/main.js?" + resourceReloadQueryString)
         ]
         
         return .head(
