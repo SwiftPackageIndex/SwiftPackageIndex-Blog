@@ -1,0 +1,22 @@
+{
+  "name": "SwiftPackageIndex-Blog",
+  "repository": "git@github.com:SwiftPackageIndex/SwiftPackageIndex-Blog.git",
+  "js_target": "./Output/main.js",
+  "css_target": "./Output/main.css",
+  "targets": {
+    "js_target": {
+      "source": "./Resources/javascripts/main.js"
+    },
+    "css_target": {
+      "source": "./Resources/stylesheets/main.scss"
+    }
+  },
+  "scripts": {
+    "build": "parcel build . --dist-dir Output",
+    "serve": "parcel serve . --dist-dir Output --no-hmr"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "2.0.0-beta.2",
+    "parcel": "^2.0.0-beta.2"
+  }
+}

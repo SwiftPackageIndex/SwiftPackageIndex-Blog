@@ -2,28 +2,28 @@ name: Deploy Site
 
 on:
   push:
-    branches: [ master ]
+    branches: [master]
 
 jobs:
   deploy:
     runs-on: macos-latest
     steps:
-    - name: Checkout
-      uses: actions/checkout@v2
-    - name: Select Xcode 12
-      run: sudo xcode-select -s /Applications/Xcode_12.app && xcodebuild -version
-    - name: Write Deploy Key
-      run: |
-        echo "$ACTIONS_DEPLOY_KEY" > ~/.ssh/id_rsa
-        chmod 0600 ~/.ssh/id_rsa
-      env:
-        ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-    - name: Build Publish
-      run: |
-        git clone https://github.com/JohnSundell/Publish.git
-        cd Publish
-        make
-    - name: Generate Static Site
-      run: publish generate && publish deploy
-      env:
-        PUBLISH_ENV: production
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Select Xcode 12
+        run: sudo xcode-select -s /Applications/Xcode_12.app && xcodebuild -version
+      - name: Write Deploy Key
+        run: |
+          echo "$ACTIONS_DEPLOY_KEY" > ~/.ssh/id_rsa
+          chmod 0600 ~/.ssh/id_rsa
+        env:
+          ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+      - name: Build Publish
+        run: |
+          git clone https://github.com/JohnSundell/Publish.git
+          cd Publish
+          make
+      - name: Generate Static Site
+        run: make deploy
+        env:
+          PUBLISH_ENV: production

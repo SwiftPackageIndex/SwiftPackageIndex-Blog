@@ -5,6 +5,10 @@
 /*.xcodeproj
 .publish
 
+/node_modules
+.cache
+.parcel-cache
+
 /Output
 .vscode/
 Content/posts/.Ulysses-Group.plist
