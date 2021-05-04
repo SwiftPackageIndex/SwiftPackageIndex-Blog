@@ -22,4 +22,3 @@ Also, a huge thanks to [Oliver](https://twitter.com/cocoanetics), who beat us to
 
 Thank you!  
 Dave & Sven
-

@@ -4,7 +4,6 @@ title: Launching Language and Platform Package Compatibility
 description: We decided that one of the most important pieces of information we could provide on a package metadata page was what versions of Swift, and what platforms it was compatible with. Building that feature turned out to be quite an epic journey.
 ---
 
-
 What’s the first question you need an answer to after finding a package that fits your needs?
 
 > “Does this package work with the Swift version and platform that my app uses?”
@@ -13,7 +12,7 @@ When we initially launched the Swift Package Index, we attempted to answer this 
 
 The problem is that neither of those properties is perfect. `swiftLanguageVersions` isn’t granular enough, only [officially](https://developer.apple.com/documentation/swift_packages/swiftversion) allowing values of `v4`, `v4_2`, and `v5`. The `platforms` property is better, but doesn’t let package authors declare compatibility with non-Apple operating systems such as Linux.
 
-Wouldn’t it be fantastic if you could see a matrix like this for *every* package? 😍
+Wouldn’t it be fantastic if you could see a matrix like this for _every_ package? 😍
 
 <picture>
   <source srcset="/images/promisekit-language-and-platform-metadata~dark.png" media="(prefers-color-scheme: dark)">
@@ -28,32 +27,32 @@ So that’s what we did, and it’s available right now. Why not [give it a try]
 
 ### Accurate, real-world compatibility data
 
-It’s a little more complicated than “just build each package” though. A package might build with Swift 5.2 on iOS, but that same build might fail using Swift 5.2 on macOS due to a UIKit dependency, or other macOS specific issue. What’s needed is a *matrix* of builds to generate an accurate picture of compatibility.
+It’s a little more complicated than “just build each package” though. A package might build with Swift 5.2 on iOS, but that same build might fail using Swift 5.2 on macOS due to a UIKit dependency, or other macOS specific issue. What’s needed is a _matrix_ of builds to generate an accurate picture of compatibility.
 
-So, if we run builds using Swift 5.1 on iOS, macOS, tvOS, watchOS, and with Linux and *any* of them pass, it’s compatible with Swift 5.2. If *any* version of Swift builds without failure on iOS, then the package supports iOS.
+So, if we run builds using Swift 5.1 on iOS, macOS, tvOS, watchOS, and with Linux and _any_ of them pass, it’s compatible with Swift 5.2. If _any_ version of Swift builds without failure on iOS, then the package supports iOS.
 
 We ended up with a platform list of:
 
-* iOS using `xcodebuild`
-* macOS using `xcodebuild`
-* macOS using `swift build` (there are good reasons where `swift build` would pass in circumstances where `xcodebuild` might fail)
-* macOS using `xcodebuild` on Apple Silicon (yes, compiled using a DTK!)
-* macOS using `swift build` on Apple Silicon
-* tvOS using `xcodebuild`
-* watchOS using `xcodebuild`
-* Linux using `swift build`
+- iOS using `xcodebuild`
+- macOS using `xcodebuild`
+- macOS using `swift build` (there are good reasons where `swift build` would pass in circumstances where `xcodebuild` might fail)
+- macOS using `xcodebuild` on Apple Silicon (yes, compiled using a DTK!)
+- macOS using `swift build` on Apple Silicon
+- tvOS using `xcodebuild`
+- watchOS using `xcodebuild`
+- Linux using `swift build`
 
 We then decided on a list of Swift compiler versions we’d like to check compatibility with:
 
-* Swift 4.2 (4.2.1)
-* Swift 5.0 (5.0.1)
-* Swift 5.1 (5.1.3)
-* Swift 5.2 (5.2.4)
-* Swift 5.3 (beta)
+- Swift 4.2 (4.2.1)
+- Swift 5.0 (5.0.1)
+- Swift 5.1 (5.1.3)
+- Swift 5.2 (5.2.4)
+- Swift 5.3 (beta)
 
-That’s up to 32 builds per package, but that’s just the beginning. What if there’s a stable release and a beta release? The stable version might support Swift 4.2 and higher, and the new beta might drop support for anything less than Swift 5.2. That’s information which would be important when choosing a package, so we need to show it. As we also track the status of the default branch, we must build that too, and we’ve quickly arrived at a place where we might need to run 96 builds *per package*! With almost 3,200 packages in the index, that’s potentially more than 300,000 builds! 😅
+That’s up to 32 builds per package, but that’s just the beginning. What if there’s a stable release and a beta release? The stable version might support Swift 4.2 and higher, and the new beta might drop support for anything less than Swift 5.2. That’s information which would be important when choosing a package, so we need to show it. As we also track the status of the default branch, we must build that too, and we’ve quickly arrived at a place where we might need to run 96 builds _per package_! With almost 3,200 packages in the index, that’s potentially more than 300,000 builds! 😅
 
-In practice, it’s less than that as most packages don’t have a current beta release, but it’s still a *lot* of builds. We’ve processed more than 200,000 builds as I write this, and we’re not quite finished. As of today, we’re at 99% though, so we almost made it before launch! 😬
+In practice, it’s less than that as most packages don’t have a current beta release, but it’s still a _lot_ of builds. We’ve processed more than 200,000 builds as I write this, and we’re not quite finished. As of today, we’re at 99% though, so we almost made it before launch! 😬
 
 If you’ve been following [these tweets](https://twitter.com/daveverwer/status/1291808885259620353), it should be obvious what all that processing was! Let’s take a look at the last **30 days** of CPU graphs for our production server, a 2018 Mac mini with 32Gb RAM and a 6-core i7 CPU:
 
@@ -81,6 +80,6 @@ Finally, we’d love to say thank you to everyone who provided help and feedback
 
 ### Wrapping up
 
-Some package authors set up continuous integration for their packages and of course, that includes a build step. That usually only covers one version of Swift though, and the information gets hidden away in a different place in each repo. We think that by centralising this data and making it available for *all* packages, we should be able to help this community make better decisions about their dependencies, and that’s what this site is all about.
+Some package authors set up continuous integration for their packages and of course, that includes a build step. That usually only covers one version of Swift though, and the information gets hidden away in a different place in each repo. We think that by centralising this data and making it available for _all_ packages, we should be able to help this community make better decisions about their dependencies, and that’s what this site is all about.
 
 We hope you love this feature as much as we do! ❤️

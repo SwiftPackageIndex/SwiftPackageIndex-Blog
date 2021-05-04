@@ -10,7 +10,7 @@ From that URL we gather data from the repository itself, the package manifest, t
 
 ## Edge cases
 
-Of course, as with everything in software development, it’s not long before you find yourself talking about edge cases. 
+Of course, as with everything in software development, it’s not long before you find yourself talking about edge cases.
 
 While creating [the build system][3], we quickly encountered packages where watchOS targets failed to build. We use Xcode’s automatic scheme creation functionality while running builds, but Xcode generates schemes that always include test targets, and `XCTest` isn’t available on watchOS. Using automatic schemes for watchOS builds wasn’t going to work.
 
@@ -93,16 +93,16 @@ Seriously though, we chose YAML as it’s relatively easy for a human to read an
 
 Of course, we’ll let adoption be the guide as to how well it is working in practice!
 
-[1]:	https://swiftpackageindex.com
-[2]:	https://github.com/SwiftPackageIndex/SwiftPackageIndex-Server/issues/485
-[3]:	posts/launching-language-and-platform-package-compatibility
-[4]:	https://github.com/pointfreeco/swift-composable-architecture
-[5]:	https://www.pointfree.co
-[6]:	https://github.com/pointfreeco/swift-composable-architecture/blob/main/.spi.yml
-[7]:	https://swiftpackageindex.com/docs/builds#built-how
-[8]:	https://hub.docker.com/r/swiftlang/swift
-[9]:	https://github.com/SwiftPackageIndex/SwiftPackageIndex-Server/issues/new
-[10]:	https://swiftpackageindex.com/soto-project/soto
-[11]:	https://github.com/soto-project/soto/blob/main/.spi.yml
-[12]:	https://github.com/SwiftPackageIndex/SwiftPackageIndex-Server/issues/435
-[13]:	https://www.arp242.net/yaml-config.html
+[1]: https://swiftpackageindex.com
+[2]: https://github.com/SwiftPackageIndex/SwiftPackageIndex-Server/issues/485
+[3]: posts/launching-language-and-platform-package-compatibility
+[4]: https://github.com/pointfreeco/swift-composable-architecture
+[5]: https://www.pointfree.co
+[6]: https://github.com/pointfreeco/swift-composable-architecture/blob/main/.spi.yml
+[7]: https://swiftpackageindex.com/docs/builds#built-how
+[8]: https://hub.docker.com/r/swiftlang/swift
+[9]: https://github.com/SwiftPackageIndex/SwiftPackageIndex-Server/issues/new
+[10]: https://swiftpackageindex.com/soto-project/soto
+[11]: https://github.com/soto-project/soto/blob/main/.spi.yml
+[12]: https://github.com/SwiftPackageIndex/SwiftPackageIndex-Server/issues/435
+[13]: https://www.arp242.net/yaml-config.html
