@@ -10,7 +10,7 @@ It’s been [one year since we made the first commit](https://twitter.com/_sa_s/
 
 Did you enjoy the cake? 😂 No? Well, how about we also tell you the story of how this project started?
 
-**Note:** We usually write blog posts here in the third person as this project is very much a joint effort, but this is a story with lots of references to both [Dave](https://twitter.com/daveverwer) and [Sven](https://twitter.com/_sa_s) individually, so I’ll write it in the first person. _Dave_
+**Note:** We usually write blog posts here in the first person plural as this project is very much a joint effort, but this is a story with lots of references to both [Dave](https://twitter.com/daveverwer) and [Sven](https://twitter.com/_sa_s) individually, so I’ll write it in the first person singular. _Dave_
 
 Before the Swift Package Index, there was the [SwiftPM Library](https://daveverwer.com/blog/launching-the-swiftpm-library/). The goal of that site was the same as this one, to provide a comprehensive index of Swift packages that helps you make better decisions about your dependencies.
 
@@ -32,6 +32,6 @@ That deserves more than a cake! 🥂🍾
 
 I’m happy that we **finally** got to bring Sven’s original idea to fruition through this project, but this celebration is about much more than that! Working with Sven on this project has been a pleasure from the beginning. We work incredibly well together and are making something that feels significant and important. The button is part of that, but the potential of the site is so much more.
 
-It’s also worth mentioning that if you want to hear Sven and I talk about this story in person, we also [discussed it on John Sundell’s podcast](https://swiftbysundell.com/podcast/75/) last year.
+It’s also worth mentioning that if you want to hear Sven and I talk about this story in person, we [discussed it on John Sundell’s podcast](https://swiftbysundell.com/podcast/75/) last year.
 
 Here’s to year two!
