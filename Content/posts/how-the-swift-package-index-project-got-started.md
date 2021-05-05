@@ -6,7 +6,7 @@ description: How did the Swift Package Index project get started, and why does a
 
 It’s been [one year since we made the first commit](https://twitter.com/_sa_s/status/1386033811348197380) on the [Swift Package Index repository](https://github.com/SwiftPackageIndex/SwiftPackageIndex-Server), and we think that deserves a little celebration!
 
-🎂
+<center style="font-size: 30px;">🎂</center>
 
 Did you enjoy the cake? 😂 No? Well, how about we also tell you the story of how this project started?
 
