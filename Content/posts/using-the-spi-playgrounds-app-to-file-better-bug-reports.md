@@ -1,5 +1,5 @@
 ---
-date: 2020-10-12 12:00
+date: 2021-05-17 12:00
 title: Using the SPI Playgrounds app to file better bug reports
 description: If you've been wondering why we created the SPI Playgrounds app, read on for a story where we used a playground to file a better bug report in the Vapor project.
 ---
