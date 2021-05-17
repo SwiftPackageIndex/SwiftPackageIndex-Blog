@@ -26,15 +26,6 @@ public extension Node where Context == HTML.DocumentContext {
         // The generation date of the site, so the CSS is never out of date.
         let resourceReloadQueryString = String(Int(Date().timeIntervalSince1970))
 
-        let stylesheetPaths = [
-            Path("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"),
-            Path("/main.css?" + resourceReloadQueryString)
-        ]
-        
-        let javascriptPaths = [
-            Path("/main.js?" + resourceReloadQueryString)
-        ]
-        
         return .head(
             .encoding(.utf8),
             .siteName(site.name),
@@ -42,8 +33,8 @@ public extension Node where Context == HTML.DocumentContext {
             .title(title),
             .description(description),
             .twitterCardType(location.imagePath == nil ? .summary : .summaryLargeImage),
-            .forEach(stylesheetPaths, { .stylesheet($0) }),
-            .forEach(javascriptPaths, { .javascript($0) }),
+            .stylesheet(Path("/main.css?" + resourceReloadQueryString)),
+            .javascript(Path("/main.js?" + resourceReloadQueryString)),
             .viewport(.accordingToDevice),
             .unwrap(site.favicon, { .favicon($0) }),
             .rssFeedLink(Path.defaultForRSSFeed.absoluteString, title: site.name),
