@@ -64,6 +64,10 @@
   --header-link-text: var(--white);
   --header-link-highlight: var(--yellow);
 
+  --code-snippet-background: var(--very-light-grey);
+  --code-snippet-text: var(--black);
+  --code-snippet-border: var(--grey);
+
   --post-rule: var(--light-grey);
 
   --what-is-background: var(--very-light-blue);
@@ -78,6 +82,10 @@
     --page-text: var(--white);
 
     --header-background: var(--very-dark-blue);
+
+    --code-snippet-background: var(--very-dark-grey);
+    --code-snippet-text: var(--white);
+    --code-snippet-border: var(--grey);
 
     --post-rule: var(--dark-grey);
 
