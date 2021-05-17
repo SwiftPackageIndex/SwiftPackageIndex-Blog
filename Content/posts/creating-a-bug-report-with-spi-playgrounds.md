@@ -8,11 +8,11 @@ We [recently released the SPI Playgrounds app](/posts/launching-the-swift-packag
 
 It’s often tricky for open-source maintainers to help people when they report issues, especially if they are in a large app, where reproducing a bug might require a significant amount of set-up. It can be especially challenging for Swift on the server projects, where you might have dependencies like databases and other services.
 
-To help open-source maintainers to help you, it can be helpful to prepare something they can run in a standalone way. How about in a playground? It doesn’t get much simpler than that!
+To help open-source maintainers to help you, it can be useful to prepare something they can run in a standalone way. How about in a playground? It doesn’t get much simpler than that!
 
 Recently, looking at [one of the issues](https://github.com/SwiftPackageIndex/SwiftPackageIndex-Server/issues/1015) in the [Swift Package Index](https://swiftpackageindex.com), it turned out that this was the perfect opportunity to use [Arena](https://github.com:finestructure/Arena) to create a playground where we could reproduce the issue.
 
-**Note:** Arena is the underlying tool used in the [SPI Playgrounds app](https://swiftpackageindex.com/try-in-a-playground/). Think of it as the command-line version of the app. We’re using it here as it allows you to create a Playgrounds with more than one dependency embedded, which the SPI Playgrounds app doesn’t yet support.
+**Note:** Arena is the underlying tool used in the [SPI Playgrounds app](https://swiftpackageindex.com/try-in-a-playground/). Think of it as the command-line version of the app. We’re using it here as it allows you to create a Playground with more than one dependency embedded, which the SPI Playgrounds app doesn’t yet support.
 
 We started by running Arena as follows:
 
