@@ -183,6 +183,11 @@ public extension Node where Context == HTML.BodyContext {
                         .a(
                             .href("https://macstadium.com/"),
                             "MacStadium"
+                        ),
+                        .text("and"),
+                        .a(
+                            .href("https://azure.microsoft.com"),
+                            "Microsoft Azure"
                         )
                     )
                 )
