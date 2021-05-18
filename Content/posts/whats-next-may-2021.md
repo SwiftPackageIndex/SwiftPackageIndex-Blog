@@ -28,7 +28,7 @@ We’d also love to pick up a few more data points about every package. Does a p
 
 ## Home Page Redesign
 
-Using the author information and keyword information mentioned above, we’d love to work on a much more information-rich site home page. The first part of this is to think about it properly and put together a design, which is why we’re not going to talk about _precisely_ what you can expect today. However, we’ll be working on this.
+Using the author information and keyword information mentioned above, we’d love to work on a much more information-rich home page. The first part of this is to think about it properly and put together a design, which is why we’re not going to talk about _precisely_ what you can expect today. However, we’ll be working on this.
 
 ## Package Collections
 
