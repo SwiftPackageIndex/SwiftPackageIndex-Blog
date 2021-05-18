@@ -1,6 +1,6 @@
 ---
 date: 2021-05-18 13:00
-title: What’s next? - May 2021
+title: What’s Next? - May 2021
 description:
 ---
 
