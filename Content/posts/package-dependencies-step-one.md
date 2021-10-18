@@ -8,7 +8,7 @@ We’ve said several times on this blog that one of the primary goals of the [Sw
 
 In pursuit of that goal, we just launched a new feature that shows you how many dependencies each of the packages in our index has. 🚀
 
-Even better, it doesn’t just give you the number of top-level dependencies that a package makes in its `Package.swift` file. Instead, we inspect the `Package.resolved` file after the [build system](/posts/launching-language-and-platform-package-compatibility) has done the hard work of dependency resolution.
+Even better, it doesn’t just give you the number of top-level dependencies that a package declares in its `Package.swift` file. Instead, we inspect the `Package.resolved` file after the [build system](/posts/launching-language-and-platform-package-compatibility) has done the hard work of dependency resolution.
 
 <picture class="shadow">
   <source srcset="/images/dependency-metadata~dark.png" media="(prefers-color-scheme: dark)">
