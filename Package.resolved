@@ -11,7 +11,7 @@
         }
       },
       {
-        "package": "codextended",
+        "package": "Codextended",
         "repositoryURL": "https://github.com/johnsundell/codextended.git",
         "state": {
           "branch": null,
@@ -20,7 +20,7 @@
         }
       },
       {
-        "package": "files",
+        "package": "Files",
         "repositoryURL": "https://github.com/johnsundell/files.git",
         "state": {
           "branch": null,
@@ -29,7 +29,7 @@
         }
       },
       {
-        "package": "ink",
+        "package": "Ink",
         "repositoryURL": "https://github.com/johnsundell/ink.git",
         "state": {
           "branch": null,
@@ -38,7 +38,7 @@
         }
       },
       {
-        "package": "plot",
+        "package": "Plot",
         "repositoryURL": "https://github.com/johnsundell/plot.git",
         "state": {
           "branch": null,
@@ -47,7 +47,7 @@
         }
       },
       {
-        "package": "publish",
+        "package": "Publish",
         "repositoryURL": "https://github.com/johnsundell/publish.git",
         "state": {
           "branch": null,
@@ -56,7 +56,7 @@
         }
       },
       {
-        "package": "shellout",
+        "package": "ShellOut",
         "repositoryURL": "https://github.com/johnsundell/shellout.git",
         "state": {
           "branch": null,
@@ -65,7 +65,7 @@
         }
       },
       {
-        "package": "sweep",
+        "package": "Sweep",
         "repositoryURL": "https://github.com/johnsundell/sweep.git",
         "state": {
           "branch": null,
