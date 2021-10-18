@@ -17,7 +17,7 @@ Even better, it doesn’t just give you the number of top-level dependencies tha
 
 That said, while this feature adds value and we’re happy to get it launched, this is step one towards where we’d like to be with dependency metadata. Some things to note:
 
-- The number shown is a count of _all_ dependencies, both package _and_ test dependencies. Test dependencies are far less impactful when evaluating how a package will impact your project, and it’d be great if we could remove those dependencies from the total. Tracked as [Issue 1300](https://github.com/SwiftPackageIndex/SwiftPackageIndex-Server/issues/1300).
+- The number shown is a count of _all_ dependencies, both package and test dependencies. Test dependencies are far less impactful when evaluating how a package will impact your project, and it’d be great if we could remove those dependencies from the total. Tracked as [Issue 1300](https://github.com/SwiftPackageIndex/SwiftPackageIndex-Server/issues/1300).
 - It would be great to have a visualisation of the dependency tree for each package. This would be useful both for people browsing packages but also for package authors, allowing them to see the story behind each of their dependencies.
 - We’d also love to get information into the index about how many packages depend on each package. This would be great for curious package authors but also is a strong signal of quality.
 
