@@ -1,6 +1,6 @@
 ---
 date: 2021-11-01 12:00
-title: M1 Pro/Max Xcode Build and Test Performance
+title: M1 Max Xcode Build and Test Performance
 description: We’ve run performance tests with the new M1 Max processor against M1 and Intel machines.
 ---
 
