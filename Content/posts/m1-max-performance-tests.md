@@ -8,7 +8,7 @@ It is a truth universally acknowledged that a developer in possession of a good 
 
 You’ll have seen benchmarks appearing on [various sites](https://www.anandtech.com/show/17024/apple-m1-max-performance-review) over the last week, but how do these machines stack up with a real-world project?
 
-The Swift Package Index is a sizeable open source project and makes for a decent test when assessing the new chips and so we’ve created [a benchmark tool](https://github.com/SwiftPackageIndex/spi-benchmark) to give some real-world results.
+The Swift Package Index is a sizeable open source project and makes for a decent test when assessing the new chips and so we’ve created [a benchmark tool](https://github.com/SwiftPackageIndex/spi-benchmark) to give some real-world results. All results are available for download in [this Numbers spreadsheet]() if you want to see specifics.
 
 ## The Tests
 
