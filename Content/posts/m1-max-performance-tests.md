@@ -20,7 +20,7 @@ First, we’ll start with the build benchmark.
 
 Overall, it’s remarkable that the M1 MacBook Air already had the best performance before Apple introduced the new MacBook Pros, but the M1 Pro and Max chips take this further. They improve on the M1 Air’s best result of 47 seconds with a build time of 31 seconds. Those extra cores matter, and the ~35% improvement is in line with what you’d expect, going from a 4+4 performance/efficiency core setup to an 8+2 configuration.
 
-If you considering upgrading from an Intel machine to an M1 Pro or Max, you'll see a dramatic reduction in build times. It’s been a long time since we’ve seen 2x improvements in a machine of the same class, but the best Intel build time is 60 seconds versus the above mentioned 31 seconds of the M1 Max. That is remarkable.
+If you're considering upgrading from an Intel machine to an M1 Pro or Max, you'll see a dramatic reduction in build times. It’s been a long time since we’ve seen 2x improvements in a machine of the same class, but the best Intel build time is 60 seconds versus the above mentioned 31 seconds of the M1 Max. That is remarkable.
 
 The results are much less dramatic when running the tests. The M1 Max’s extra cores don’t help much, and the best time between the regular M1 and the Pro/Max is inconsequential. 26.8 seconds on the M1 MacBook Air and 26.3 seconds on the Mac Book Pro.
 
