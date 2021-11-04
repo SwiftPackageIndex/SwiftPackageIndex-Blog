@@ -28,7 +28,7 @@ The results are much less dramatic when running the tests. The M1 Max’s extra 
 
 You may have noticed no difference between the benchmarks when switching between the M1 Pro and the M1 Max. The GPU is not used for compilation or in these tests, so it makes perfect sense, but it’s worth mentioning. It’s also worth noting that we saw virtually no difference between an M1 Max with 32Gb and one with 64Gb, just 0.2 seconds faster on builds and 0.6 seconds faster on tests.
 
-There was a noticeable difference between the M1 Pro 8-core and the M1 Pro 10-core machine, with the 10-core being around 15% faster when building. That’s quite significant but is in line with what you might expect from dropping two performance cores. We have ignored the test results for this machine as they seem too out of line with other machines that there may have been a problem with the benchmarking environment.
+There was a noticeable difference between the M1 Pro 8-core and the M1 Pro 10-core machine, with the 10-core being around 15% faster when building. That’s quite significant but is in line with what you might expect from dropping two performance cores. We have ignored the test benchmark results for this machine as they seem too out of line with expectations indicating that there may have been a problem with the benchmarking environment.
 
 There are plenty of reasons to get a machine with a Max chip and 64Gb, but compiling your code faster is not one of them!
 
