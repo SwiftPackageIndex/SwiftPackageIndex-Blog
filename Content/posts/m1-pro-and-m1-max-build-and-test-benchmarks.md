@@ -8,7 +8,7 @@ It is a truth universally acknowledged that a developer in possession of a good 
 
 You’ll have seen benchmarks appearing on [various sites](https://www.anandtech.com/show/17024/apple-m1-max-performance-review) over the last week, but how do these machines stack up with a real-world Xcode project?
 
-The [Swift Package Index](https://swiftpackageindex.com) is a sizeable open source project and makes for a good test when assessing the new chips, so we’ve created [a benchmark tool](https://github.com/SwiftPackageIndex/spi-benchmark) to give some real-world results. All of the raw numbers referenced below are [available for download](https://raw.githubusercontent.com/SwiftPackageIndex/SwiftPackageIndex-Blog/master/Content/files/SPI-Benchmarks.pdf).
+The [Swift Package Index](https://swiftpackageindex.com) is a sizeable open source project and makes for a good test when assessing the new chips, so we’ve created [a benchmark tool](https://github.com/SwiftPackageIndex/spi-benchmark) to give some real-world results.
 
 ## The Tests
 
@@ -57,3 +57,5 @@ There was a time where if you recommended a low-end MacBook to a developer who w
 ## Thanks
 
 Thanks to [Toby Herbert](https://twitter.com/tobyaherbert), [Greg Spiers](https://twitter.com/gspiers), and [Cameron Cooke](https://twitter.com/camsoft2000) for taking the time to run the benchmarks that covered the configurations that we didn’t have available!
+
+Also, if you'd like to look more closely at the results, all of the raw numbers referenced in this post are [available for download](https://raw.githubusercontent.com/SwiftPackageIndex/SwiftPackageIndex-Blog/master/Content/files/SPI-Benchmarks.pdf).
