@@ -62,6 +62,6 @@ If you have a budget of less than $2,500, buy an M1 MacBook Air (not the 13" Pro
 
 ## Thanks
 
-Thanks to [Toby Herbert](https://twitter.com/tobyaherbert), [Greg Spiers](https://twitter.com/gspiers), and [Cameron Cooke](https://twitter.com/camsoft2000) for taking the time to run the benchmarks that covered the configurations that we didn’t have available!
+Thanks to [Christian Weinberger](https://twitter.com/_cweinberger), [Toby Herbert](https://twitter.com/tobyaherbert), [Greg Spiers](https://twitter.com/gspiers), and [Cameron Cooke](https://twitter.com/camsoft2000) for taking the time to run the benchmarks that covered the configurations that we didn’t have available!
 
 Also, if you'd like to look more closely at the results, all of the raw numbers referenced in this post are [available for download](https://raw.githubusercontent.com/SwiftPackageIndex/SwiftPackageIndex-Blog/master/Content/files/SPI-Benchmarks.pdf).
