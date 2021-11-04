@@ -18,13 +18,11 @@ First, we know what you all want to see. The results!
 
 ![A table of build benchmarks showing a dramatic reduction of build times from Intel MacBook Pro machines through to M1-based machines](/images/m1-max-m1-pro-xcode-build-and-test-benchmark-numbers.png)
 
-Overall, it’s remarkable that the M1 MacBook Air already had the best performance before Apple introduced the new MacBook Pros, but the M1 Pro and Max chips take this further. They improve on the M1 Air’s best result of 47 seconds with a build time of 31 seconds. Those extra cores matter, and the ~35% improvement is in line with what you’d expect, going from a 4+4 performance/efficiency core setup to an 8+2 configuration.
+Overall, it’s remarkable that the M1 MacBook Air already had the best performance before Apple introduced the new MacBook Pros, but the M1 Pro and Max chips take this further. They improve on the M1 Air’s best result of 47 seconds with a build time of less than 31 seconds. Those extra cores matter, and the ~35% improvement is in line with what you’d expect, going from a 4+4 performance/efficiency core setup to an 8+2 configuration.
 
 If you’re considering upgrading from an Intel machine to an M1 Pro or Max, you’ll see a dramatic reduction in build times. It’s been a long time since we’ve seen 2x improvements in a machine of the same class, but the best Intel build time is 60 seconds versus the above mentioned 31 seconds of the M1 Max. That is remarkable.
 
 The results are much less dramatic when running the tests. The M1 Max’s extra cores don’t help much, and the best time between the regular M1 and the Pro/Max is inconsequential. 26.8 seconds on the M1 MacBook Air and 26.3 seconds on the Mac Book Pro.
-
-The Intel machines are closer to the Apple silicon machines in this benchmark but still lag by about 50% with their fastest time of 37 seconds.
 
 ## M1 Pro vs M1 Max, 32Gb vs 64Gb, and 8-core vs 10-core
 
@@ -53,6 +51,10 @@ If you’re on an M1 machine, the performance is less striking as the individual
 All of that said, it’s worth remembering one thing, especially if you’re on a tighter budget. The M1 Max MacBook Pro with 64Gb is 100% faster than the fastest Intel machine we tested (30.9 seconds vs 60 seconds), where the M1 MacBook Air is 30% faster than it. However, the M1 Max MacBook Pros tested here all sell for around ~$4,000, and the M1 MacBook Air tested here was ~$1,600. Performance does not scale linearly with price.
 
 There was a time where if you recommended a low-end MacBook to a developer who was just getting started, you’d know that it would be adequate but never great. That’s no longer true, and even the lowest-end M1 machine will have comparable performance to the highest-end laptops.
+
+## What should you buy?
+
+If you have a budget of less than $2,500, buy an M1 MacBook Air (not the 13" Pro. The MacBook Air is the bargain here!). If you have more than $2,500, then buy the 10-core M1 Pro.
 
 ## Thanks
 
