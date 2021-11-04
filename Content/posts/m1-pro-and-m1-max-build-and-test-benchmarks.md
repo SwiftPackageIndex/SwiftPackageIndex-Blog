@@ -1,6 +1,6 @@
 ---
 date: 2021-11-01 12:00
-title: M1 Max Xcode Build and Test Benchmarks
+title: M1 Pro and M1 Max Xcode Build and Test Benchmarks
 description: We’ve run real-world performance benchmarks with the new M1 MacBook Pro machines against M1 and Intel machines.
 ---
 
