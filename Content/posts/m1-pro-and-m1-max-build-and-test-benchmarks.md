@@ -16,7 +16,11 @@ We are testing two performance aspects: building the project (clean build) and r
 
 First, we know what you all want to see. The results!
 
-![A table of build benchmarks showing a dramatic reduction of build times from Intel MacBook Pro machines through to M1-based machines](/images/m1-max-m1-pro-xcode-build-and-test-benchmark-numbers.png)
+![A table of build benchmarks showing a dramatic reduction of build times from Intel MacBook Pro machines through to M1-based machines](/images/m1-max-m1-pro-xcode-build-and-test-benchmark-results.png)
+
+![A chart showing test benchmark results increasing steadily from the fastest M1 Max machine to the slowest Intel-based machine](/images/m1-max-m1-pro-xcode-build-benchmark-results.png)
+
+![A chart showing test benchmark results increasing from one set of times for the M1-based machines to another set of resuklts for Intel-based machines](/images/m1-max-m1-pro-xcode-test-benchmark-results.png)
 
 Overall, it’s remarkable that the M1 MacBook Air already had the best performance before Apple introduced the new MacBook Pros, but the M1 Pro and Max chips take this further. They improve on the M1 Air’s best result of 47 seconds with a build time of less than 31 seconds. Those extra cores matter, and the ~35% improvement is in line with what you’d expect, going from a 4+4 performance/efficiency core setup to an 8+2 configuration.
 
@@ -28,7 +32,7 @@ The results are much less dramatic when running the tests. The M1 Max’s extra 
 
 You may have noticed no difference between the benchmarks when switching between the M1 Pro and the M1 Max. The GPU is not used for compilation or in these tests, so it makes perfect sense, but it’s worth mentioning. It’s also worth noting that we saw no difference between an M1 Max with 32Gb and one with 64Gb, difference of 0.2 seconds on builds and 0.6 seconds on tests is well within the error margins.
 
-There _was_ a noticeable difference between the M1 Pro 8-core and the M1 Pro 10-core machine, with the 10-core being around 15% faster when building. That’s quite significant but is in line with what you might expect from dropping two performance cores. We have ignored the test benchmark results for this machine as they seem too out of line with expectations indicating that there may have been a problem with the benchmarking environment.
+There _was_ a noticeable difference between the M1 Pro 8-core and the M1 Pro 10-core machine, with the 10-core being around 15% faster when building. That’s quite significant but is in line with what you might expect from dropping two performance cores. As mentioned above, we have ignored the test benchmark results for this machine as there may have been a problem with the benchmarking environment for this machine.
 
 There are plenty of reasons to get a machine with a Max chip and 64Gb, but compiling your code faster is not one of them!
 
