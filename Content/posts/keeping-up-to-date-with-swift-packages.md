@@ -6,7 +6,7 @@ description: How do you keep up with new releases of the packages you use? How d
 
 How do you keep up with new releases of the packages you use? How do you discover new packages? It’s a tough challenge to keep up to date with everything that the community releases, so we have some announcements today that can help you stay informed!
 
-Before we get started with the announcements, we want to credit [James Sherlouk](https://twitter.com/JamesSherlouk) for his invaluable contributions to building the Twitter updates feature. He was instrumental in getting this feature up and running and has been making other improvements in several areas of the site since we launched. Thank you, James!
+Before we get started with the announcements, we want to credit [James Sherlock](https://twitter.com/JamesSherlouk) for his invaluable contributions to building the Twitter updates feature. He was instrumental in getting this feature up and running and has been making other improvements in several areas of the site since we launched. Thank you, James!
 
 ### Updates via Twitter
 
