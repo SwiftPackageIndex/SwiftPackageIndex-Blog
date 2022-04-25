@@ -24,10 +24,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Install Swift 5.4
+      - name: Install Swift
         uses: fwal/setup-swift@v1
-        with:
-          swift-version: '5.4'
       - name: Verify Swift version
         run: swift --version
       - name: Install Publish
