@@ -9,12 +9,12 @@ DocC, introduced at WWDC 2021, is Apple’s recommended way to provide package d
 - `TODO looks great`
 - `TODO despite some initial updates still a bit tricky to set up for hosting`
 
-![A screenshot showing a sample documentation page.][/images/documentation-tca.png]
+[![A screenshot showing a sample documentation page.](/images/documentation-tca.png)](https://swiftpackageindex.com/pointfreeco/swift-composable-architecture/main/documentation/composablearchitecture)
 
 ## How does the Swift Package Index help?
 We’ve updated our build system to not only build packages but also generate their documentation and make it available from the package page itself. If a package comes with documentation, you can find a link to it in the sidebar.
 
-![A screenshot showing the documentation link on a package page.][/images/documentation-link.png]
+![A screenshot showing the documentation link on a package page.](/images/documentation-link.png)
 
 There are only two steps you, as the package author, need to take to host your documentation on the Swift Package Index:
 
