@@ -5,24 +5,25 @@ description: We’ve been working on something that should help authors when pub
 ---
 
 DocC, introduced at WWDC 2021, is Apple’s recommended way to provide package documentation.
-{
-- looks great
-- despite some initial updates still a bit tricky to set up for hosting
-}
+
+- `TODO looks great`
+- `TODO despite some initial updates still a bit tricky to set up for hosting`
 
 ![A screenshot showing a sample documentation page.][/images/documentation-tca.png]
 
 ## How does the Swift Package Index help?
-We’ve updated our build system to not only build package but also generate their documentation and make it available from the package page itself.
+We’ve updated our build system to not only build packages but also generate their documentation and make it available from the package page itself. If a package comes with documentation, you can find a link to it in the sidebar.
 
 ![A screenshot showing the documentation link on a package page.][/images/documentation-link.png]
 
-There are only two steps you, as the package author, need to take in order to benefit from this setup:
+There are only two steps you, as the package author, need to take to host your documentation on the Swift Package Index:
 
 1. Add the [swift-docc-plugin][1] documentation plugin to your `Package.swift` manifest file, if you haven’t done so already.
 2. Create a `.spi.yml` file in the root of your package repository telling us which targets to build and store documentation for.
 
-The first step you have likely already done if you have tried to generate documentation locally. If not, here is the snippet you can simply add to the end of your `Package.swift` manifest:
+### Update your package manifest
+
+The first step you have likely already done if you’ve worked with DocC locally. If not, here is the snippet you can simply add to the end of your `Package.swift` manifest:
 
 ```swift
 #if swift(>=5.6)
@@ -35,16 +36,22 @@ The first step you have likely already done if you have tried to generate docume
 
 You can add this even if the tools-version of your manifest is for an earlier version of Swift than 5.6. The `#if swift(>=5.6)` will make sure it doesn’t interfere with your manifest when run with older Swift versions.
 
+### Add an SPI manifest
+
 The second step is equally simple: Create the following `.spi.yml` file in the root of your repository:
 
 ```yaml
 version: 1
 builder:
   configs:
-  - documentation_targets: [DocumentationTarget]
+  - documentation_targets: [Target]
 ```
 
-This will tell us to generate documentation for the target `DocumentationTarget`. Substitute in your target here – or even list several if your documentation is set up to cover multiple libraries for instance.
+This will tell us to generate documentation for the target `Target`. This can (and typically is) your package’s main or only target but it can also be a dedicated target that contains documentation Markdown files.
+
+Substitute your target here – or even list several if your documentation is set up to have multiple.
+
+## Documentation platform
 
 By default we are generating documentation on macOS. If your package requires the documentation generation to be run for a certain platform, for instance iOS, you can control this by specifying the platform as well:
 
@@ -56,9 +63,13 @@ builder:
     documentation_targets: [DocumentationTarget]
 ```
 
+## Update frequency
+
 We are building documentation for a package’s default branch as well as any releases. Please note that we collate builds on the default branch over 24 hours in order to reduce the number of builds we have to process for fast-changing repositories.
 
 That means that it will take 24 hours for initial documentation to appear.
+
+## Linking to release documentation
 
 Please also note that we are initially only adding a documentation link to the default branch documentation to the package page even though we are building documentation for releases as well.
 
@@ -73,6 +84,3 @@ The documentation for the latest release is available here:
 [1]:	https://github.com/apple/swift-docc-plugin "Swift DocC"
 [2]:	https://staging.swiftpackageindex.com/SwiftPackageIndex/SemanticVersion/main/documentation/semanticversion
 [3]:	https://swiftpackageindex.com/SwiftPackageIndex/SemanticVersion/0.3.3/documentation/semanticversion
-
-[image-1]:	/images/documentation-link.png
-[image-2]:	/images/documentation-link.png
