@@ -19,7 +19,7 @@ We’ve updated our build system to not only build packages but also generate th
 There are only two steps you, as the package author, need to take to host your documentation on the Swift Package Index:
 
 1. Add the [swift-docc-plugin][1] documentation plugin to your `Package.swift` manifest file, if you haven’t done so already.
-2. Create a `.spi.yml` file in the root of your package repository telling us which targets to build and store documentation for.
+2. Create a `.spi.yml` file in the root of your package repository telling us which targets to build and host documentation for.
 
 ### Update your package manifest
 
