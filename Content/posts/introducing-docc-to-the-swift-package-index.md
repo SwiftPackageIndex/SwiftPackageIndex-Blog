@@ -47,7 +47,7 @@ builder:
   - documentation_targets: [Target]
 ```
 
-This will tell us to generate documentation for the target `Target`. This can (and typically is) your package’s main or only target but it can also be a dedicated target that contains documentation Markdown files.
+This will tell us to generate documentation for the target `Target`. This can (and typically is) your package’s main or only target but it can also be a dedicated target that contains documentation markdown files.
 
 Substitute your target here – or even list several if your documentation is set up to have multiple.
 
