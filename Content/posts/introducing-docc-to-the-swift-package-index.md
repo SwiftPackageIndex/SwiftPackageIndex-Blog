@@ -67,7 +67,7 @@ builder:
 
 We are building documentation for a package’s default branch as well as any releases. Please note that we collate builds on the default branch over 24 hours in order to reduce the number of builds we have to process for fast-changing repositories.
 
-That means that it will take 24 hours for initial documentation to appear.
+That means that it will take 24 hours for initial documentation to appear unless you tag a new release.
 
 ## Linking to release documentation
 
