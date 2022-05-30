@@ -10,11 +10,11 @@ You can find links to Simon's work [on his website](https://simonbs.dev), his [G
 
 This week, we also talked about all of these wonderful packages:
 
-- [SDWebImage](https://swiftpackageindex.com/SDWebImage/SDWebImage)
-- [Motion](https://swiftpackageindex.com/b3ll/Motion)
-- [Table](https://swiftpackageindex.com/JanGorman/Table)
-- [SwiftyTextTable](https://swiftpackageindex.com/scottrhoyt/SwiftyTextTable)
-- [Publish](https://swiftpackageindex.com/JohnSundell/Publish)
-- [SwiftPackageList](https://swiftpackageindex.com/FelixHerrmann/swift-package-list)
+- [SDWebImage](https://swiftpackageindex.com/SDWebImage/SDWebImage) by [SDWebImage](https://swiftpackageindex.com/SDWebImage)
+- [Motion](https://swiftpackageindex.com/b3ll/Motion) by [Adam Bell](https://swiftpackageindex.com/b3ll)
+- [Table](https://swiftpackageindex.com/JanGorman/Table) by [Jan Gorman](https://swiftpackageindex.com/JanGorman)
+- [SwiftyTextTable](https://swiftpackageindex.com/scottrhoyt/SwiftyTextTable) by [Scott Hoyt](https://swiftpackageindex.com/scottrhoyt)
+- [Publish](https://swiftpackageindex.com/JohnSundell/Publish) by [John Sundell](https://swiftpackageindex.com/JohnSundell)
+- [SwiftPackageList](https://swiftpackageindex.com/FelixHerrmann/swift-package-list) by [Felix Herrmann](https://swiftpackageindex.com/FelixHerrmann)
 
 You can [listen to the full recording here](https://twitter.com/i/spaces/1dRKZlOpkErJB), and if you want to join us next time, we’ve already [scheduled the next episode](https://twitter.com/i/spaces/1djxXPpdejLxZ) for two weeks time. Set a reminder and join us!
