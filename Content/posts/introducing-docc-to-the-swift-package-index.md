@@ -59,8 +59,8 @@ By default we are generating documentation on macOS. If your package requires th
 version: 1
 builder:
   configs:
-  - platform: ios
-    documentation_targets: [DocumentationTarget]
+  - documentation_targets: [DocumentationTarget]
+    platform: ios
 ```
 
 ## Update frequency
