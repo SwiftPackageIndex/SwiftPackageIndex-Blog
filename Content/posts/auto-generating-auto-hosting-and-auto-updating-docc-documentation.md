@@ -4,7 +4,7 @@ title: Auto-generating, Auto-hosting, and Auto-updating DocC Documentation
 description: We’ve been working on something that should help authors when publishing their package: the easiest way to host your package documentation.
 ---
 
-Introduced at WWDC 2021, DocC is Apple’s recommended way to provide package documentation.
+Introduced at WWDC 2021, [DocC](https://developer.apple.com/documentation/docc) is Apple’s recommended way to provide package documentation.
 
 It’s easy to use, and the resulting documentation looks great. It generates documentation from documentation comments and article files written in Markdown that suit longer-form documentation. You can even use it to create beautiful interactive tutorials with images and step-by-step instructions. DocC generates either Xcode documentation archives or HTML and CSS files that you can host on a web server.
 
