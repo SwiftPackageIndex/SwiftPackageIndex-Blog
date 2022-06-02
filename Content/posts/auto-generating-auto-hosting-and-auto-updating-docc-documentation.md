@@ -85,7 +85,7 @@ To keep the amount of processing that our build servers perform under control, w
 
 ## Early adopters!
 
-You may have seen a [call for package authors with DocC compatible documentation](https://twitter.com/SwiftPackages/status/1531299947462676480) earlier this week, and I’m thrilled to say that we have over XXX packages that have already added configuration files and have their documentation hosted by us! Why not check them out? We are currently generating documentation for sixteen packages:
+You may have seen a [call for package authors with DocC compatible documentation](https://twitter.com/SwiftPackages/status/1531299947462676480) earlier this week, and I’m thrilled to say that we have over XXX packages that have already added configuration files and have their documentation hosted by us! Why not check them out? We are currently generating documentation for nineteen packages:
 
 - [Compute](https://swiftpackageindex.com/AndrewBarba/swift-compute-runtime) by [Andrew Barba](https://swiftpackageindex.com/AndrewBarba)
 - [GeoJSONKit](https://swiftpackageindex.com/maparoni/GeoJSONKit) by [Maparoni](https://swiftpackageindex.com/maparoni)
