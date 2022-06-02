@@ -71,7 +71,7 @@ version: 1
 builder:
   configs:
     - platform: ios
-    documentation_targets: [Target]
+      documentation_targets: [Target]
 ```
 
 ## Auto-updating frequency
