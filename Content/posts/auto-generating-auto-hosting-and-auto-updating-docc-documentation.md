@@ -78,18 +78,32 @@ builder:
 
 To keep the amount of processing that our build servers perform under control, we only build the default branch for each package at most once every 24 hours. So, when you push the configuration file live, the system will generate that set of documentation, but it will then be 24 hours until the generation process runs again. If there have been any commits during that period, we’ll create docs from the latest commit when the period resets.
 
-## Early adopters!
-
-You may have seen a [call for package authors with DocC compatible documentation](https://twitter.com/SwiftPackages/status/1531299947462676480) earlier this week, and I’m thrilled to say that we have over XXX packages that have already added configuration files and have their documentation hosted by us! Why not check them out?
 <picture class="shadow">
   <source srcset="/images/hosted-docc-documentation~dark.png" media="(prefers-color-scheme: dark)">
   <img src="hosted-docc-documentation~dark.png" alt="Hosted documentation for the DocC package shown in the context of the Swift Package Index with a header above the documentation.">
 </picture>
 
-- Documentation for [Package X](https://swiftpackageindex.com/package/x)
-- Documentation for [Package Y](https://swiftpackageindex.com/package/x)
+## Early adopters!
 
-If you maintain one of the 4,600+ packages we have in the index, add your configuration file, and we’ll take care of the rest.
+You may have seen a [call for package authors with DocC compatible documentation](https://twitter.com/SwiftPackages/status/1531299947462676480) earlier this week, and I’m thrilled to say that we have over XXX packages that have already added configuration files and have their documentation hosted by us! Why not check them out? We are currently generating documentation for sixteen packages:
+
+- [Compute](https://swiftpackageindex.com/AndrewBarba/swift-compute-runtime) by [Andrew Barba](https://swiftpackageindex.com/AndrewBarba)
+- [GeoJSONKit](https://swiftpackageindex.com/maparoni/GeoJSONKit) by [Maparoni](https://swiftpackageindex.com/maparoni)
+- [mqtt-nio](https://swiftpackageindex.com/swift-server-community/mqtt-nio) by [Swift On Server Community](https://swiftpackageindex.com/swift-server-community)
+- [ParseSwift](https://swiftpackageindex.com/parse-community/Parse-Swift) by [Parse Platform](https://swiftpackageindex.com/parse-community)
+- [RevenueCat](https://swiftpackageindex.com/RevenueCat/purchases-ios) by [RevenueCat](https://swiftpackageindex.com/RevenueCat)
+- [Runestone](https://swiftpackageindex.com/simonbs/Runestone) by [Simon Støvring](https://swiftpackageindex.com/simonbs)
+- [Saga](https://swiftpackageindex.com/loopwerk/Saga) by [Loopwerk](https://swiftpackageindex.com/loopwerk) who very kindly [sponsors this project through GitHub Sponsors](https://github.com/sponsors/SwiftPackageIndex).
+- [ScaledFont](https://swiftpackageindex.com/kharrison/ScaledFont) by [Keith Harrison](https://swiftpackageindex.com/kharrison)
+- [SemanticVersion](https://swiftpackageindex.com/SwiftPackageIndex/SemanticVersion) by [Swift Package Index](https://swiftpackageindex.com/SwiftPackageIndex) (well, we couldn't ship this without one of our packages being documented, right? 😂)
+- [SpanGrid](https://swiftpackageindex.com/sherlouk/SpanGrid) by [James Sherlock](https://swiftpackageindex.com/sherlouk) who also very kindly [sponsors this project through GitHub Sponsors](https://github.com/sponsors/SwiftPackageIndex) as well as being our [top contributor](https://github.com/SwiftPackageIndex/SwiftPackageIndex-Server/graphs/contributors) outside the core team!
+- [StreamChat](https://swiftpackageindex.com/GetStream/stream-chat-swift), [StreamChatSwiftUI](https://swiftpackageindex.com/GetStream/stream-chat-swiftui), and [EffectsLibrary](https://swiftpackageindex.com/GetStream/effects-library) by [Stream](https://swiftpackageindex.com/GetStream) who very kindly [sponsor this project](https://github.com/SwiftPackageIndex/SwiftPackageIndex-Server#corporate-sponsors).
+- [swift-bundler](https://swiftpackageindex.com/stackotter/swift-bundler) by [stackotter](https://swiftpackageindex.com/stackotter)
+- [swift-composable-architecture](https://swiftpackageindex.com/pointfreeco/swift-composable-architecture) by [Point-Free](https://swiftpackageindex.com/pointfreeco) who also very kindly [sponsor this project through GitHub Sponsors](https://github.com/sponsors/SwiftPackageIndex).
+- [SwiftDocC](https://swiftpackageindex.com/apple/swift-docc) and [swift-markdown](https://swiftpackageindex.com/apple/swift-markdown) from [Apple](https://swiftpackageindex.com/apple). Without which, this project would not have been possible. Thank you to all the members of that team for creating this tool! ❤️
+- [TGCardViewController](https://swiftpackageindex.com/skedgo/TGCardViewController) by [SkedGo](https://swiftpackageindex.com/skedgo)
+
+If you maintain one of the 4,600+ packages we have in the index, please do add your configuration file to opt-in to having your documentation hosted on the Swift Package Index and we’ll take care of everything else. If you have any issues at all, please [join us on Discord](https://discord.gg/vQRb6KkYRw) or [raise an issue](https://github.com/SwiftPackageIndex/SwiftPackageIndex-Server/issues/new/choose).
 
 ## Next steps
 
