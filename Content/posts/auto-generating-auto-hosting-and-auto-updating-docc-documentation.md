@@ -109,7 +109,7 @@ If you maintain one of the 4,600+ packages we have in the index, please add your
 
 We’re proud of what we have built here, but we’re not done with this feature yet.
 
-There’s a write up of things we want to tackle [on our Discussion forum](https://github.com/SwiftPackageIndex/SwiftPackageIndex-Server/discussions/1590#discussioncomment-2784226), but to summarise, this is what we’re planning to work on next:
+There’s a write up of things we want to tackle next [on our Discussion forum](https://github.com/SwiftPackageIndex/SwiftPackageIndex-Server/discussions/1590#discussioncomment-2784226), but to summarise, this is what we’re planning to work on next:
 
 - Versioned documentation with stable URLs. You’ll be able to read documentation for the exact version of a package you’re using in your projects.
 - Easy switching between documentation versions. Once we have versioned documentation, we’re planning to clarify where the documentation you’re reading has come from. If you’re looking at default branch documentation, you’ll be able to see that. Same if you’re looking at a tagged version. We’ll also make it easy to switch between documentation sets for each package.
