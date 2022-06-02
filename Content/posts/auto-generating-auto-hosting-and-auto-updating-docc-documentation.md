@@ -2,7 +2,7 @@
 date: 2022-06-06 12:00
 title: Auto-generating, Auto-hosting, and Auto-updating DocC Documentation
 description: DocC is Apple’s recommended way to provide documentation for your packages, and launching today, the
-Swift Package Index will generate, host, and update all package documentation!
+Swift Package Index can generate, host, and update package documentation for any package in the index!
 ---
 
 Introduced at WWDC 2021, [DocC](https://developer.apple.com/documentation/docc) is Apple’s recommended way to provide documentation for your packages.
@@ -17,7 +17,7 @@ That’s where our latest feature will come in handy, and we’re launching it t
 
 Our build system can now generate and host DocC documentation and make it available from your package’s page in the index. All we need is a little configuration data so that we know how best to build your docs.
 
-Once configured, you will see a new “Documentation” link in the sidebar and never have to worry about your documentation ever again!
+Once configured, you will see a new “Documentation” link in the sidebar and never have to worry about your documentation again!
 
 <picture class="shadow">
   <source srcset="/images/documentation-menu-link~dark.png" media="(prefers-color-scheme: dark)">
@@ -45,7 +45,7 @@ You may already have taken this first step if you’ve worked with DocC locally.
 #endif
 ```
 
-Making the plugin dependency conditional means that nothing will break even if the `tools-version` of your manifest is for an earlier version of Swift than 5.6. Naturally, if your package _only_ supports Swift 5.6 and above, this is unnecessary.
+Making the plugin dependency conditional means that nothing will break even if the `swift-tools-version` of your manifest is for an earlier version of Swift than 5.6. Naturally, this is unnecessary if your package _only_ supports Swift 5.6 and above.
 
 ### Add a Swift Package Index manifest file
 
@@ -93,23 +93,23 @@ You may have seen a [call for package authors with DocC compatible documentation
 - [ParseSwift](https://swiftpackageindex.com/parse-community/Parse-Swift) by [Parse Platform](https://swiftpackageindex.com/parse-community)
 - [RevenueCat](https://swiftpackageindex.com/RevenueCat/purchases-ios) by [RevenueCat](https://swiftpackageindex.com/RevenueCat)
 - [Runestone](https://swiftpackageindex.com/simonbs/Runestone) by [Simon Støvring](https://swiftpackageindex.com/simonbs)
-- [Saga](https://swiftpackageindex.com/loopwerk/Saga) by [Loopwerk](https://swiftpackageindex.com/loopwerk) who very kindly [sponsors this project through GitHub Sponsors](https://github.com/sponsors/SwiftPackageIndex).
+- [Saga](https://swiftpackageindex.com/loopwerk/Saga) by [Loopwerk](https://swiftpackageindex.com/loopwerk), who very kindly [sponsors this project through GitHub Sponsors](https://github.com/sponsors/SwiftPackageIndex).
 - [ScaledFont](https://swiftpackageindex.com/kharrison/ScaledFont) by [Keith Harrison](https://swiftpackageindex.com/kharrison)
-- [SemanticVersion](https://swiftpackageindex.com/SwiftPackageIndex/SemanticVersion) by [Swift Package Index](https://swiftpackageindex.com/SwiftPackageIndex) (well, we couldn't ship this without one of our packages being documented, right? 😂)
-- [SpanGrid](https://swiftpackageindex.com/sherlouk/SpanGrid) by [James Sherlock](https://swiftpackageindex.com/sherlouk) who also very kindly [sponsors this project through GitHub Sponsors](https://github.com/sponsors/SwiftPackageIndex) as well as being our [top contributor](https://github.com/SwiftPackageIndex/SwiftPackageIndex-Server/graphs/contributors) outside the core team!
-- [StreamChat](https://swiftpackageindex.com/GetStream/stream-chat-swift), [StreamChatSwiftUI](https://swiftpackageindex.com/GetStream/stream-chat-swiftui), and [EffectsLibrary](https://swiftpackageindex.com/GetStream/effects-library) by [Stream](https://swiftpackageindex.com/GetStream) who very kindly [sponsor this project](https://github.com/SwiftPackageIndex/SwiftPackageIndex-Server#corporate-sponsors).
+- [SemanticVersion](https://swiftpackageindex.com/SwiftPackageIndex/SemanticVersion) by [Swift Package Index](https://swiftpackageindex.com/SwiftPackageIndex) (well, we couldn’t ship this without one of our packages having documentation, right? 😂)
+- [SpanGrid](https://swiftpackageindex.com/sherlouk/SpanGrid) by [James Sherlock](https://swiftpackageindex.com/sherlouk) who also very kindly [sponsors this project through GitHub Sponsors](https://github.com/sponsors/SwiftPackageIndex) and is our [top contributor](https://github.com/SwiftPackageIndex/SwiftPackageIndex-Server/graphs/contributors) outside the core team!
+- [StreamChat](https://swiftpackageindex.com/GetStream/stream-chat-swift), [StreamChatSwiftUI](https://swiftpackageindex.com/GetStream/stream-chat-swiftui), and [EffectsLibrary](https://swiftpackageindex.com/GetStream/effects-library) by [Stream](https://swiftpackageindex.com/GetStream), who very kindly [sponsor this project](https://github.com/SwiftPackageIndex/SwiftPackageIndex-Server#corporate-sponsors).
 - [swift-bundler](https://swiftpackageindex.com/stackotter/swift-bundler) by [stackotter](https://swiftpackageindex.com/stackotter)
-- [swift-composable-architecture](https://swiftpackageindex.com/pointfreeco/swift-composable-architecture) by [Point-Free](https://swiftpackageindex.com/pointfreeco) who also very kindly [sponsor this project through GitHub Sponsors](https://github.com/sponsors/SwiftPackageIndex).
+- [swift-composable-architecture](https://swiftpackageindex.com/pointfreeco/swift-composable-architecture) by [Point-Free](https://swiftpackageindex.com/pointfreeco), who also very kindly [sponsor this project through GitHub Sponsors](https://github.com/sponsors/SwiftPackageIndex).
 - [SwiftDocC](https://swiftpackageindex.com/apple/swift-docc) and [swift-markdown](https://swiftpackageindex.com/apple/swift-markdown) from [Apple](https://swiftpackageindex.com/apple). Without which, this project would not have been possible. Thank you to all the members of that team for creating this tool! ❤️
 - [TGCardViewController](https://swiftpackageindex.com/skedgo/TGCardViewController) by [SkedGo](https://swiftpackageindex.com/skedgo)
 
-If you maintain one of the 4,600+ packages we have in the index, please do add your configuration file to opt-in to having your documentation hosted on the Swift Package Index and we’ll take care of everything else. If you have any issues at all, please [join us on Discord](https://discord.gg/vQRb6KkYRw) or [raise an issue](https://github.com/SwiftPackageIndex/SwiftPackageIndex-Server/issues/new/choose).
+If you maintain one of the 4,600+ packages we have in the index, please add your configuration file to opt-in to having your documentation hosted on the Swift Package Index, and we’ll take care of everything else. If you have any issues, please [join us on Discord](https://discord.gg/vQRb6KkYRw) or [raise an issue](https://github.com/SwiftPackageIndex/SwiftPackageIndex-Server/issues/new/choose).
 
 ## Next steps
 
-We’re proud of what we have built here, but we're not done with this feature yet.
+We’re proud of what we have built here, but we’re not done with this feature yet.
 
-There’s a full write up of things we want to tackle [on our Discussion forum](https://github.com/SwiftPackageIndex/SwiftPackageIndex-Server/discussions/1590#discussioncomment-2784226), but to summarise, this is what we’re planning to work on next:
+There’s a write up of things we want to tackle [on our Discussion forum](https://github.com/SwiftPackageIndex/SwiftPackageIndex-Server/discussions/1590#discussioncomment-2784226), but to summarise, this is what we’re planning to work on next:
 
 - Versioned documentation with stable URLs. You’ll be able to read documentation for the exact version of a package you’re using in your projects.
-- Easy switching between documentation versions. We’re planning to make it clear where the documentation you’re reading has come from. If you’re looking at default branch documentation, you’ll be able to see that. Same if you’re looking at a tagged version. We’ll also make it easy to switch between documentation sets for each package.
+- Easy switching between documentation versions. Once we have versioned documentation, we’re planning to clarify where the documentation you’re reading has come from. If you’re looking at default branch documentation, you’ll be able to see that. Same if you’re looking at a tagged version. We’ll also make it easy to switch between documentation sets for each package.
