@@ -19,7 +19,10 @@ Our build system can now generate and host DocC documentation and make it availa
 
 Once configured, you will see a new “Documentation” link in the sidebar and never have to worry about your documentation ever again!
 
-![A screenshot showing the documentation link on a package page.](/images/documentation-link.png)
+<picture class="shadow">
+  <source srcset="/images/documentation-menu-link~dark.png" media="(prefers-color-scheme: dark)">
+  <img src="documentation-menu-link~dark.png" alt="The DocC package page showing a link to the auto-generated and hosted documentation.">
+</picture>
 
 As a package author or maintainer, there are only three things you need to do for the Swift Package Index to build and host your documentation.
 
@@ -78,6 +81,10 @@ To keep the amount of processing that our build servers perform under control, w
 ## Early adopters!
 
 You may have seen a [call for package authors with DocC compatible documentation](https://twitter.com/SwiftPackages/status/1531299947462676480) earlier this week, and I’m thrilled to say that we have over XXX packages that have already added configuration files and have their documentation hosted by us! Why not check them out?
+<picture class="shadow">
+  <source srcset="/images/hosted-docc-documentation~dark.png" media="(prefers-color-scheme: dark)">
+  <img src="hosted-docc-documentation~dark.png" alt="Hosted documentation for the DocC package shown in the context of the Swift Package Index with a header above the documentation.">
+</picture>
 
 - Documentation for [Package X](https://swiftpackageindex.com/package/x)
 - Documentation for [Package Y](https://swiftpackageindex.com/package/x)
