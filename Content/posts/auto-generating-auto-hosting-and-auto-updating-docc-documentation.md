@@ -21,7 +21,7 @@ Once configured, you will see a new “Documentation” link in the sidebar and 
 
 <picture class="shadow">
   <source srcset="/images/documentation-menu-link~dark.png" media="(prefers-color-scheme: dark)">
-  <img src="documentation-menu-link~dark.png" alt="The DocC package page showing a link to the auto-generated and hosted documentation.">
+  <img src="/images/documentation-menu-link~dark.png" alt="The DocC package page showing a link to the auto-generated and hosted documentation.">
 </picture>
 
 As a package author or maintainer, there are only three things you need to do for the Swift Package Index to build and host your documentation.
@@ -80,7 +80,7 @@ To keep the amount of processing that our build servers perform under control, w
 
 <picture class="shadow">
   <source srcset="/images/hosted-docc-documentation~dark.png" media="(prefers-color-scheme: dark)">
-  <img src="hosted-docc-documentation~dark.png" alt="Hosted documentation for the DocC package shown in the context of the Swift Package Index with a header above the documentation.">
+  <img src="/images/hosted-docc-documentation~dark.png" alt="Hosted documentation for the DocC package shown in the context of the Swift Package Index with a header above the documentation.">
 </picture>
 
 ## Early adopters!
