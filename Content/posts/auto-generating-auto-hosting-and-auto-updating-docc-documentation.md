@@ -85,8 +85,9 @@ To keep the amount of processing that our build servers perform under control, w
 
 ## Early adopters!
 
-You may have seen a [call for package authors with DocC compatible documentation](https://twitter.com/SwiftPackages/status/1531299947462676480) earlier this week, and I’m thrilled to say that we have almost 20 packages that have already added configuration files and have their documentation hosted by us! Why not check them out?
+You may have seen a [call for package authors with DocC compatible documentation](https://twitter.com/SwiftPackages/status/1531299947462676480) earlier this week, and I’m thrilled to say that we have 20 packages that have already added configuration files and have their documentation hosted by us! Why not check them out?
 
+- [bytes](https://swiftpackageindex.com/tbointeractive/bytes) by [TBO Interactive](https://swiftpackageindex.com/tbointeractive)
 - [Compute](https://swiftpackageindex.com/AndrewBarba/swift-compute-runtime) by [Andrew Barba](https://swiftpackageindex.com/AndrewBarba)
 - [GeoJSONKit](https://swiftpackageindex.com/maparoni/GeoJSONKit) by [Maparoni](https://swiftpackageindex.com/maparoni)
 - [mqtt-nio](https://swiftpackageindex.com/swift-server-community/mqtt-nio) by [Swift On Server Community](https://swiftpackageindex.com/swift-server-community)
