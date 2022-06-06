@@ -24,15 +24,17 @@ Once configured, you will see a new “Documentation” link in the sidebar and 
   <img src="/images/documentation-menu-link~light.png" alt="The DocC package page showing a link to the auto-generated and hosted documentation.">
 </picture>
 
-As a package author or maintainer, there are only three things you need to do for the Swift Package Index to build and host your documentation.
+As a package author or maintainer, there are only ~~three~~two things you need to do for the Swift Package Index to build and host your documentation.
 
 1. Ensure that your package builds successfully with Swift 5.6. Your package can support earlier versions of Swift, too, but must successfully build with 5.6.
-2. Add the [swift-docc-plugin](https://github.com/apple/swift-docc-plugin) documentation plugin to your package’s `Package.swift` manifest file, if you haven’t done so already.
+2. ~~Add the [swift-docc-plugin](https://github.com/apple/swift-docc-plugin) documentation plugin to your package’s `Package.swift` manifest file, if you haven’t done so already.~~
 3. Create a `.spi.yml` file and commit it to the root of your package’s repository, telling our build system which targets have documentation.
 
 From there, we’ll take care of everything else. Every time you push new commits to your package, we’ll regenerate your documentation.
 
-### Adding the Swift DocC plugin
+<h3 id="adding-the-docc-plugin">Adding the Swift DocC plugin</h3>
+
+> **UPDATE:** It’s no longer necessary to add the DocC plugin to your package. If you’ve added it already, feel free to remove it. Our build system will also cope if you leave the plugin or need it for another purpose, so there’s no rush to remove it! The only change you need to make to your project is to [add the manifest file](#add-a-spi-manifest).
 
 You may already have taken this first step if you’ve worked with DocC locally. If not, then add the following lines to the end of your `Package.swift`:
 
@@ -47,7 +49,7 @@ You may already have taken this first step if you’ve worked with DocC locally.
 
 Making the plugin dependency conditional means that nothing will break even if the `swift-tools-version` of your manifest is for an earlier version of Swift than 5.6. Naturally, this is unnecessary if your package _only_ supports Swift 5.6 and above.
 
-### Add a Swift Package Index manifest file
+<h3 id="add-a-spi-manifest">Add a Swift Package Index manifest file</h3>
 
 Then, create and commit a manifest file named `.spi.yml` file in the root of your repository that looks something like this:
 
