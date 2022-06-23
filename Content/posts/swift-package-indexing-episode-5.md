@@ -9,6 +9,7 @@ This week we talked with [Corey E. Baker](https://twitter.com/DrCoreyBaker) abou
 Here are the links to what we talked about:
 
 - [ParseSwift](https://swiftpackageindex.com/parse-community/Parse-Swift)
+- Parse CareKit
 - [Sankey](https://swiftpackageindex.com/maxhumber/Sankey) by [Max Humber](https://twitter.com/maxhumber)
 - [Soto](https://swiftpackageindex.com/soto-project/soto) by [Adam Fowler](https://twitter.com/o_aberration)
 
