@@ -17,6 +17,6 @@ Here are the links to what we talked about:
 - [UniqueID](https://swiftpackageindex.com/karwa/uniqueid) by [Karl](https://swiftpackageindex.com/karwa)
 - [XCSnippets](https://swiftpackageindex.com/MarcoEidinger/XCSnippets) by [Marco Eidinger](https://swiftpackageindex.com/MarcoEidinger)
 
-Unfortunately, there was a mishap with the recording of this episode (and by that, I mean we didn't record it 😅) but if you want to join us next time we’ve already [scheduled the next episode](https://twitter.com/i/spaces/1PlKQaNYkAVKE) for two weeks time. Set a reminder and join us!
+Unfortunately, there was a mishap with the recording of this episode (and by that, I mean we didn't record it 😅), but if you want to join us next time, we’ve already [scheduled the next episode](https://twitter.com/i/spaces/1PlKQaNYkAVKE) for two weeks time. Set a reminder and join us!
 
-We'll double check the recording settings next time, too! 🙈
+We'll double-check the recording settings next time, too! 🙈
