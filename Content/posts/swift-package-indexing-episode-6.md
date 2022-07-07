@@ -15,4 +15,4 @@ Of course, we also had some package recommendations and details about some signi
 - [URLCompatibilityKit](https://swiftpackageindex.com/MarcoEidinger/URLCompatibilityKit) by [Marco Eidinger](https://swiftpackageindex.com/MarcoEidinger)
 - [CustomRepeatDate](https://swiftpackageindex.com/pixyzehn/custom-repeat-date) by [Hiroki Nagasawa](https://swiftpackageindex.com/pixyzehn)
 
-No recording mishaps this week, so you can [listen to the full recording here](https://twitter.com/i/spaces/1mnGedQyERNKX), and if you want to join us next time, we’ve already [scheduled the next episode](https://twitter.com/i/spaces/1vOxwyyQDyqGB) for two weeks time. Set a reminder and join us!
+No recording mishaps this week, so you can [listen to the full recording here](https://twitter.com/i/spaces/1PlKQaNYkAVKE), and if you want to join us next time, we’ve already [scheduled the next episode](https://twitter.com/i/spaces/1vOxwyyQDyqGB) for two weeks time. Set a reminder and join us!
