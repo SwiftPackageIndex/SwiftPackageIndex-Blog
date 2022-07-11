@@ -1,7 +1,7 @@
 ---
 date: 2022-07-11 12:00
 title: We need your help to fund this project
-description: Many open-source projects are just code and don’t need constant attention. The Swift Package Index is a little different, so we are opening up GitHub sponors for the project. We'd love your support.
+description: As an open-source project without the backing of a big company, we need your help to keep this project going.
 ---
 
 As an open-source project without the backing of a big company, community donations are critical to keeping this project going.
