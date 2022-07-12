@@ -1,5 +1,5 @@
 ---
-date: 2022-07-12
+date: 2022-07-12 12:00
 title: Searching for plugins?
 description: With Swift 5.6, Xcode and the Swift Package Manager gained a new product type, plugins, and we’re delighted to announce we now have support for filtering search results by whether or not they include a plugin.
 ---
