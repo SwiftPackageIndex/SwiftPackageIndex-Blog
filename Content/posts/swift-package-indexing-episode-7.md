@@ -1,5 +1,5 @@
 ---
-date: 2022-21-07 12:00
+date: 2022-07-21 12:00
 title: Swift Package Indexing - Episode 7
 description: We just wrapped up another episode of Swift Package Indexing! We talked again about the progress we’ve made working towards versioned documentation hosting. Sven had more quiz questions for Dave, and of course, we talked about community packages!
 ---
