@@ -1,5 +1,5 @@
 ---
-date: 2022-08-04 12:00
+date: 2022-08-05 12:00
 title: Versioned DocC Documentation
 description: We rolled out auto-generating DocC documentation exactly two months ago, and now we’re rolling out phase two. Versioned documentation!
 ---
