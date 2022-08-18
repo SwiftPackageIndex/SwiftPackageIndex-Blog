@@ -10,7 +10,7 @@ As usual, we started with some updates about the Package Index itself. Bugs and 
 
 We then had our usual Quiz and Package recommendations:
 
-## Quiz
+### Quiz
 
 Here are this episodes questions, asked via Twitter:
 
@@ -20,7 +20,7 @@ Here are this episodes questions, asked via Twitter:
 
 If there’s any question you’d like us to answer, please tweet at us at [@SwiftPackages](https://twitter.com/swiftpackages).
 
-## Packages
+### Packages
 
 - [ShortcutRecorder](https://swiftpackageindex.com/Kentzo/ShortcutRecorder) by [Ilya Kulakov](https://swiftpackageindex.com/Kentzo)
 - [SwiftCommand](https://swiftpackageindex.com/Zollerboy1/SwiftCommand) by [Josef Zoller](https://swiftpackageindex.com/Zollerboy1)
