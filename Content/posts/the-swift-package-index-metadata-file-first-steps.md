@@ -95,7 +95,7 @@ Of course, we’ll let adoption be the guide as to how well it is working in pra
 
 [1]: https://swiftpackageindex.com
 [2]: https://github.com/SwiftPackageIndex/SwiftPackageIndex-Server/issues/485
-[3]: posts/launching-language-and-platform-package-compatibility
+[3]: /posts/launching-language-and-platform-package-compatibility
 [4]: https://github.com/pointfreeco/swift-composable-architecture
 [5]: https://www.pointfree.co
 [6]: https://github.com/pointfreeco/swift-composable-architecture/blob/main/.spi.yml
