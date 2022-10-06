@@ -16,4 +16,4 @@ Our community packages for this week were:
 - [Physical](https://swiftpackageindex.com/hyperjeff/Physical) by [Jeff Biggus](https://swiftpackageindex.com/hyperjeff)
     - You’ll also want to watch Jeff’s [talk at 360|iDev](https://twitter.com/hyperjeff/status/1572502824629735428)
 
-We hope you’ll join us for our [next episode on the 20th October](https://twitter.com/i/spaces/1rmGPkWYmvjKN)!
+If you missed it, the [recording is available here](https://twitter.com/i/spaces/1MnxnpRQmLkGO). We hope you’ll join us for our [next episode on the 20th October](https://twitter.com/i/spaces/1rmGPkWYmvjKN), too!
