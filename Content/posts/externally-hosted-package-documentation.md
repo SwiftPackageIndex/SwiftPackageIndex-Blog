@@ -27,7 +27,7 @@ In terms of what visitors to package pages see, it makes no difference where the
 We also created a universal documentation link for any package that has documentation either hosted by us or externally. For any package with documentation, navigate to:
 
 ```
-https://swiftpackageindex.com/owner/repository/documentation
+https://swiftpackageindex.com/{owner}/{repository}/documentation
 ```
 
 Replacing `owner` and `repository`, of course, and it will redirect to either our hosted or the external documentation.
