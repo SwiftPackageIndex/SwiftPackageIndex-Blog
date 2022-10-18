@@ -30,4 +30,4 @@ We also created a universal documentation link for any package that has document
 https://swiftpackageindex.com/{owner}/{repository}/documentation
 ```
 
-Replacing `owner` and `repository`, of course, and it will redirect to either our hosted or the external documentation.
+Replacing `{owner}` and `{repository}`, of course, and it will redirect to either our hosted or the external documentation.
