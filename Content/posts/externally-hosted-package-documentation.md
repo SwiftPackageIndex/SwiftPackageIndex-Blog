@@ -17,7 +17,7 @@ Here’s how to do it:
 ```
 version: 1
 external_links:
-  documentation: “https://example.com/package/documentation/”
+  documentation: "https://example.com/package/documentation/"
 ```
 
 Here’s an [example](https://github.com/groue/GRDB.swift/blob/master/.spi.yml) from [GRDB](https://swiftpackageindex.com/groue/GRDB.swift), who already opted into this new feature.
