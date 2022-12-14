@@ -29,6 +29,6 @@ metadata:
   authors: “Written by Person One, Person Two, and other contributors.”
 ```
 
-We want to thank everyone who contributes to open-source software, and we hope this feature helps authors get credit for their hard work.
+We want to thank everyone who contributes to open-source software, and we hope this feature helps authors get credit for their efforts.
 
 We’d also like to thank Javier for his hard work and always-positive attitude on this feature. Every aspect of working with him was a pleasure, and this feature only exists today because of his efforts.
