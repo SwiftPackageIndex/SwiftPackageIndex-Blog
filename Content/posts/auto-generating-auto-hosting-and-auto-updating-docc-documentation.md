@@ -89,6 +89,8 @@ To keep the amount of processing that our build servers perform under control, w
 
 ## Early adopters!
 
+**Note:** We'd like to thank the following package authors for coming on board with our documentation hosting feature so early. The feature is fully released and stable now and available for *all* package authors. for more information, see our [SPIManifest documentation](https://swiftpackageindex.com/swiftpackageindex/spimanifest/0.13.0/documentation/spimanifest/commonusecases).
+
 You may have seen a [call for package authors with DocC compatible documentation](https://twitter.com/SwiftPackages/status/1531299947462676480) earlier this week, and I’m thrilled to say that we have 20 packages that have already added configuration files and have their documentation hosted by us! Why not check them out?
 
 - [bytes](https://swiftpackageindex.com/tbointeractive/bytes) by [TBO Interactive](https://swiftpackageindex.com/tbointeractive)
