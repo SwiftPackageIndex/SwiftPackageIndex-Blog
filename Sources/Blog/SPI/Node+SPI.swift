@@ -1,4 +1,4 @@
-// Copyright 2020-2021 Dave Verwer, Sven A. Schmidt, and other contributors.
+// Copyright Dave Verwer, Sven A. Schmidt, and other contributors.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -24,7 +24,7 @@ public extension Node where Context == HTML.DocumentContext {
         } else {
             title.append("&ndash;" + site.name)
         }
-        
+
         var description = location.description
         if description.isEmpty {
             description = site.description
@@ -60,7 +60,7 @@ public extension Node where Context == HTML.HeadContext {
             .src(path.absoluteString)
         )
     }
-    
+
     static func analyticsHead() -> Node<Context> {
         if Environment.current == .production {
             return .raw("""
@@ -84,7 +84,7 @@ public extension Node where Context == HTML.BodyContext {
             return .empty
         }
     }
-    
+
     static func header<T: Website>(on site: T) -> Node<Context> {
         .header(
             .div(
@@ -115,7 +115,7 @@ public extension Node where Context == HTML.BodyContext {
             )
         )
     }
-    
+
     static func post<T: Website>(with item:Item<T>, on site: T) -> Node<Context> {
         .group(
             .h2(
@@ -201,7 +201,7 @@ public extension Node where Context == HTML.BodyContext {
             )
         )
     }
-    
+
     static func small(_ nodes: Node<HTML.BodyContext>...) -> Node {
         .element(named: "small", nodes: nodes)
     }
