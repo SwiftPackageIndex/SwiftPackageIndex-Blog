@@ -1,4 +1,4 @@
-# Copyright 2020-2021 Dave Verwer, Sven A. Schmidt, and other contributors.
+# Copyright Dave Verwer, Sven A. Schmidt, and other contributors.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,10 +19,10 @@ serve-static-site:
 
 build-static-site:
 	@publish generate
-	
+
 serve-front-end:
 	@docker run --rm -it -v $$PWD:/host -w /host --entrypoint sh node:15.8-alpine -c "/usr/local/bin/yarn && /usr/local/bin/yarn serve"
-	
+
 build-front-end:
 	@docker run --rm -v $$PWD:/host -w /host --entrypoint sh node:15.8-alpine -c "/usr/local/bin/yarn && /usr/local/bin/yarn build"
 
