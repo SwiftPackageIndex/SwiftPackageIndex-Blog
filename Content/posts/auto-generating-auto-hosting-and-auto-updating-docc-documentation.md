@@ -5,7 +5,7 @@ description: DocC is Apple’s recommended way to provide documentation for your
 Swift Package Index can generate, host, and update package documentation for any package in the index!
 ---
 
-**UPDATE:** We now support auto-generation of *versioned* documentation, too! [Find out more details here](https://blog.swiftpackageindex.com/posts/versioned-docc-documentation/).
+> **UPDATE:** The information in this blog post is superceded by our [official documentation](https://swiftpackageindex.com/SwiftPackageIndex/SPIManifest/documentation/spimanifest/commonusecases). Please refer to the documentation rather than this blog post.
 
 Introduced at WWDC 2021, [DocC](https://developer.apple.com/documentation/docc) is Apple’s recommended way to provide documentation for your packages.
 
