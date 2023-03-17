@@ -4,6 +4,8 @@ title: Externally hosted package documentation
 description: Using auto-hosted documentation remains the easiest way to get your package’s documentation available on the web, but we now also support documentation for projects that have more complex requirements or well-established documentation that already lives on the web.
 ---
 
+> **UPDATE:** The information in this blog post is superceded by our [official documentation](https://swiftpackageindex.com/SwiftPackageIndex/SPIManifest/documentation/spimanifest/commonusecases). Please refer to the documentation rather than this blog post.
+
 We have a little more documentation-related news to announce today!
 
 We love that so many package authors have chosen to [host their package’s documentation with the Swift Package Index](https://blog.swiftpackageindex.com/posts/auto-generating-auto-hosting-and-auto-updating-docc-documentation/). There are now more than 180 packages that have opted in for us to host [versioned documentation](https://blog.swiftpackageindex.com/posts/versioned-docc-documentation/), and we think that’s excellent news for the Swift ecosystem.
