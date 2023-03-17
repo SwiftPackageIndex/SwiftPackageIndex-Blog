@@ -4,6 +4,8 @@ title: Versioned DocC Documentation
 description: We rolled out auto-generating DocC documentation exactly two months ago, and now we’re rolling out phase two. Versioned documentation!
 ---
 
+> **UPDATE:** The information in this blog post is superceded by our [official documentation](https://swiftpackageindex.com/SwiftPackageIndex/SPIManifest/documentation/spimanifest/commonusecases). Please refer to the documentation rather than this blog post.
+
 We rolled out [auto-generating, auto-hosting, and auto-updating DocC documentation](https://blog.swiftpackageindex.com/posts/auto-generating-auto-hosting-and-auto-updating-docc-documentation/) exactly two months ago, and here we are again with more documentation-focused news!
 
 Opting into this feature was simple for package authors with a quick amendment to the package’s `.spi.yml` file telling us what targets/platforms to use for the documentation generation process. We handled everything else from there, and a “Documentation” link automatically appears for every opted-in package.
