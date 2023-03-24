@@ -18,4 +18,4 @@ Apple’s support and the community support we already enjoy via your GitHub spo
 
 We can’t wait to work with Apple and the rest of the Swift community to build the very best place to find Swift packages.
 
-You can see all of our supporters on the [Supporters page](https://swiftpackageindex.com/supporters).
+You can see all of our supporters on the [Supporters page](https://swiftpackageindex.com/supporters) and there is an announcement post on the [Swift.org blog](https://www.swift.org/blog/swift-package-index-developer-spotlight/), too.
