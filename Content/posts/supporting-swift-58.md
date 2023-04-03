@@ -8,7 +8,7 @@ Last Thursday, [Apple released Swift 5.8](https://www.swift.org/blog/swift-5.8-r
 
 Please feel free to [add any packages](https://swiftpackageindex.com/add-a-package) that use Swift 5.8-specific features!
 
-**Note:** For the next few days, you may see question mark icons against Swift 5.8 in the compatibility matrix. Please bear with us while our systems process the almost 30,000 builds needed to determine package compatibility with a new version of Swift!
+**Note:** For the next few days, you may see question mark icons against Swift 5.8 in the compatibility matrix. Please bear with us while our systems process the almost 67,000 builds needed to determine package compatibility with a new version of Swift!
 
 <picture>
   <source srcset="/images/swift58-build-results-pending~dark.png" media="(prefers-color-scheme: dark)">
