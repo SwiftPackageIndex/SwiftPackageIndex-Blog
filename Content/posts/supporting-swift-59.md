@@ -15,4 +15,6 @@ So, that’s the announcement! The Swift Package Index **now supports Swift 5.9 
   <img src="/images/swift59-build-results~light.png" alt="A build compatibility matrix showing compatibility with Swift 5.9.">
 </picture>
 
+We also support building documentation with Swift 5.9, but as it’s still in beta, we have made that opt-in for now. If you’d like to build your package documentation with 5.9, you can [let us know via a `.spi.yml` manifest file](https://github.com/fruitcoder/extract-case-value/pull/1/files) in your package’s repository.
+
 **Note:** For the next few days, you may see question mark icons against the Swift 5.9 beta column in the matrix. Please bear with us while our systems process the build backlog.
