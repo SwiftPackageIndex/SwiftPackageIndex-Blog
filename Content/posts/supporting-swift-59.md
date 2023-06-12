@@ -8,7 +8,7 @@ Back in April, we were [proud to announce that we supported Swift 5.8 within one
 
 How could we improve on adding support for a new Swift version after just one week of it being available? We could add support for Swift 5.9 one week after the release of the _first beta version_!
 
-So, that’s the announcement! The Swift Package Index **now supports Swift 5.9 packages**, and will [soon show macro products](https://github.com/SwiftPackageIndex/SwiftPackageIndex-Server/issues/2426) contained within a package.
+So, that’s the announcement! The Swift Package Index **now supports Swift 5.9 packages** and will [soon show macro products](https://github.com/SwiftPackageIndex/SwiftPackageIndex-Server/issues/2426) contained within them.
 
 <picture>
   <source srcset="/images/swift59-build-results~dark.png" media="(prefers-color-scheme: dark)">
