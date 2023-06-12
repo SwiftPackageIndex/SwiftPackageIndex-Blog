@@ -8,11 +8,11 @@ Back in April, we were [proud to announce that we supported Swift 5.8 within one
 
 How could we improve on adding support for a new Swift version after just one week of it being available? We could add support for Swift 5.9 one week after the release of the _first beta version_!
 
-So, that’s the announcement! The Swift Package Index **now supports Swift 5.9** packages, including macros, the new syntax, and [everything else Swift 5.9 brings](https://www.hackingwithswift.com/articles/258/whats-new-in-swift-5-9)!
+So, that’s the announcement! The Swift Package Index **now supports Swift 5.9 packages**, and will [soon show macro products](https://github.com/SwiftPackageIndex/SwiftPackageIndex-Server/issues/2426) contained within a package.
 
 <picture>
   <source srcset="/images/swift59-build-results~dark.png" media="(prefers-color-scheme: dark)">
-  <img src="/images/swift59-build-results~light.png" alt="A build compatibility matrix showing an unknown compatibility state against Swift 5.8.">
+  <img src="/images/swift59-build-results~light.png" alt="A build compatibility matrix showing compatibility with Swift 5.9.">
 </picture>
 
 **Note:** For the next few days, you may see question mark icons against the Swift 5.9 beta column in the matrix. Please bear with us while our systems process the build backlog.
