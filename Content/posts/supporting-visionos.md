@@ -8,7 +8,7 @@ Apple were quick to release the promised visionOS SDK only a week after WWDC 202
 
 That’s right, we’ve begun **building all packages in the Swift Package Index with the visionOS SDK** released earlier this week.
 
-You can find visionOS compatibility information both in the build matrix on the package page as well our the [shields.io build badges](/posts/launching-language-and-platform-package-compatibility/).
+You can find visionOS compatibility information both in the build matrix on the package page as well our the [shields.io build badges](/posts/launching-language-and-platform-package-compatibility#badges).
 
 <picture>
   <source srcset="/images/visionos-build-results~dark.png" media="(prefers-color-scheme: dark)">

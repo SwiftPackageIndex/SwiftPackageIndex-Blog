@@ -60,7 +60,7 @@ If you’ve been following [these tweets](https://twitter.com/daveverwer/status/
 
 You can see a few of our final test runs in that graph, and then we started processing for real. Since then, we’ve kept the CPU completely pegged for more than two weeks. We’ve also had our staging Mac mini, a spare 2016 MacBook Pro, and a DTK working on builds too.
 
-### Everyone loves badges
+### <a id="badges"></a> Everyone loves badges
 
 Providing compatibility information on this site is one thing, but everyone loves adorning their packages pages with [shields.io](https://shields.io) badges, don’t they? If you maintain an open-source project, wouldn’t you like to show off real compatibility status in your README file, like this?
 
