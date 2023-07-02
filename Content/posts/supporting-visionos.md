@@ -1,5 +1,5 @@
 ---
-date: 2023-07-29 12:00
+date: 2023-06-29 12:00
 title: Supporting visionOS
 description: We’ve added support for visionOS to our compatibility testing, showing it on the package pages and build badges.
 ---
