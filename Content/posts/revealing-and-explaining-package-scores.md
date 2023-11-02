@@ -4,11 +4,11 @@ title: Revealing and explaining package scores
 description: When you search the Swift Package Index, the order in which the search results are displayed is determined by a combination of the relevance of text in the package name and description, and an internal score based on various metrics. Today, we're adding a feature that
 ---
 
-This guest post is from [Cyndi Chin](https://cyndichin.github.io/) and announces the results of her work for this year’s [Swift Mentorship programme](https://www.swift.org/mentorship/).
+This guest post is from [Cyndi Chin](https://cyndichin.github.io/) and announces the results of her work for this year’s [Swift Mentorship Program](https://www.swift.org/mentorship/).
 
 Working with Cyndi over the past twelve weeks has been an absolute pleasure. Her enhancements meaningfully push the Swift Package Index forward by making our internal package ranking algorithm transparent, allowing package authors to understand our search results better.
 
-One of Cyndi’s goals for this programme was to be involved in shipping something from beginning to end, and the end of that process is the announcement of the feature going live on the site! So, I’ll finish by saying a huge thank you to Cyndi for all of her hard work and hand you over to her for the rest of this post so she can make today’s announcement.
+One of Cyndi’s goals was to be involved in shipping something from beginning to end, and the end of that process is the announcement of the feature going live on the site! So, I’ll finish by saying a huge thank you to Cyndi for all of her hard work and hand you over to her for the rest of this post so she can make today’s announcement.
 
 ---
 
