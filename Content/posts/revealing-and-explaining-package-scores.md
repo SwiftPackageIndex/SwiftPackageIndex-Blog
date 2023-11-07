@@ -34,13 +34,13 @@ While the algorithm for calculating package scores [has always been publicly ava
 The package score is currently evaluated based on ten score traits. Previously, we relied on eight attributes to determine a package’s score.
 
 - Whether the package is archived or not (Up to 20 points)
-- Whether the package has an open-source license that is compatible with the App Store (Up to +10 points)
-- The number of releases (Up to +20 points)
-- The number of stars (Up to +37 points)
-- The number of dependencies (Up to +5 points)
-- The latest activity (Up to +15 points)
-- Whether the package has documentation (Up to +15 points)
-- The number of contributors (Up to +10 points)
+- Whether the package has an open-source license that is compatible with the App Store (Up to 10 points)
+- The number of releases (Up to 20 points)
+- The number of stars (Up to 37 points)
+- The number of dependencies (Up to 5 points)
+- The latest activity (Up to 15 points)
+- Whether the package has documentation (Up to 15 points)
+- The number of contributors (Up to 10 points)
 
 ### Adding new score traits
 
