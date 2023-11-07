@@ -53,9 +53,9 @@ There is always room for further improvement to the package score, and these ten
 
 As a package author, if you’d like to see the breakdown of your package score, find the “Do you maintain this package?” section at the bottom of the right-hand sidebar on your package page, and you’ll find the score breakdown at the end.
 
-<picture class=“shadow“>
-  <source srcset=“/images/find-package-maintainers-page~dark.png“ media=“(prefers-color-scheme: dark)“>
-  <img src=“/images/find-package-maintainers-page~light.png“ alt=“The location of the Learn More link that takes package authors to the package maintainer’s page for their package.“>
+<picture class="shadow">
+  <source srcset="/images/find-package-maintainers-page~dark.png“ media=“(prefers-color-scheme: dark)">
+  <img src="/images/find-package-maintainers-page~light.png" alt="The location of the Learn More link that takes package authors to the package maintainer’s page for their package.">
 </picture>
 
 If you have any feedback regarding the package score or suggestions on how we can improve it, we would love to hear your thoughts in our [discussion forum](https://github.com/SwiftPackageIndex/SwiftPackageIndex-Server/discussions/2591). We appreciate any contributions as we continue to enhance the package score system.
