@@ -25,8 +25,6 @@ In combination with the relevancy of a search query, we use a package score to p
   <img src="/images/package-maintainers-score-section~light.png" alt="The package score section on the package maintainer's page showing a breakdown of package score for a package.">
 </picture>
 
-The most important thing about this package score is that we want it to inform package maintainer's on their package score and provide visibility into how it is calculated.
-
 While the algorithm for calculating package scores [has always been publicly available](https://github.com/SwiftPackageIndex/SwiftPackageIndex-Server/blob/main/Sources/App/Core/Score.swift), it’s unreasonable to expect people to browse the source code to see how we score packages. Today’s release makes the scoring process much more transparent.
 
 ### Score traits
