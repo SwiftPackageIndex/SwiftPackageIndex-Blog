@@ -4,7 +4,7 @@ title: Highlighting package funding links
 description:
 ---
 
-The story is as old as time, or at least as old as [time_t](https://www.gnu.org/software/libc/manual/html_node/Time-Types.html)! A kind developer writes some code and makes it open-source as a library, hoping it might help others. Over time, that library might gain popularity, prompting other developers to raise issues, open discussions, and sometimes even pull requests! However, it can also happen that the original developer realises they are spending all their free time working for free on a project they might not even use anymore, leading to burnout and many abandoned projects.
+The story is as old as time, or at least as old as [`time_t`](https://www.gnu.org/software/libc/manual/html_node/Time-Types.html)! A kind developer writes some code and makes it open-source as a library, hoping it might help others. Over time, that library might gain popularity, prompting other developers to raise issues, open discussions, and sometimes even pull requests! However, it can also happen that the original developer realises they are spending all their free time working for free on a project they might not even use anymore, leading to burnout and many abandoned projects.
 
 Are services like GitHub Sponsors, [Open Collective](https://opencollective.com/), [Patreon](https://www.patreon.com), and [Ko-fi](https://ko-fi.com) the answer? We’re not convinced they are a perfect solution, but they are the best “one size fits all” solution we have.
 
